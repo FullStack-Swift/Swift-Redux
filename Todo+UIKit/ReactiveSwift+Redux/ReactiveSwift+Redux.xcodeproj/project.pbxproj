@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87437EFE27ACB7FA00244FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87437EFD27ACB7FA00244FC8 /* Assets.xcassets */; };
+		87437F0127ACB7FA00244FC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87437F0027ACB7FA00244FC8 /* Preview Assets.xcassets */; };
+		87E2E6D227ACB9B000AC3214 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6B427ACB9B000AC3214 /* MainReducer.swift */; };
+		87E2E6D327ACB9B000AC3214 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6B527ACB9B000AC3214 /* MainState.swift */; };
+		87E2E6D427ACB9B000AC3214 /* MainMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6B627ACB9B000AC3214 /* MainMiddleware.swift */; };
+		87E2E6D627ACB9B000AC3214 /* MainAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6B827ACB9B000AC3214 /* MainAction.swift */; };
+		87E2E6D727ACB9B000AC3214 /* CounterReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6BA27ACB9B000AC3214 /* CounterReducer.swift */; };
+		87E2E6D827ACB9B000AC3214 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6BB27ACB9B000AC3214 /* CounterState.swift */; };
+		87E2E6DA27ACB9B000AC3214 /* CounterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6BD27ACB9B000AC3214 /* CounterAction.swift */; };
+		87E2E6DB27ACB9B000AC3214 /* CounterMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6BE27ACB9B000AC3214 /* CounterMiddleware.swift */; };
+		87E2E6DC27ACB9B000AC3214 /* AuthMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6C027ACB9B000AC3214 /* AuthMiddleware.swift */; };
+		87E2E6DD27ACB9B000AC3214 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6C127ACB9B000AC3214 /* AuthState.swift */; };
+		87E2E6DF27ACB9B000AC3214 /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6C327ACB9B000AC3214 /* AuthReducer.swift */; };
+		87E2E6E027ACB9B000AC3214 /* AuthAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6C427ACB9B000AC3214 /* AuthAction.swift */; };
+		87E2E6E127ACB9B000AC3214 /* RootAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6C627ACB9B000AC3214 /* RootAction.swift */; };
+		87E2E6E327ACB9B000AC3214 /* RootState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6C827ACB9B000AC3214 /* RootState.swift */; };
+		87E2E6E427ACB9B000AC3214 /* RootReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6C927ACB9B000AC3214 /* RootReducer.swift */; };
+		87E2E6E527ACB9B000AC3214 /* RootMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6CA27ACB9B000AC3214 /* RootMiddleware.swift */; };
+		87E2E6E627ACB9B000AC3214 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6CB27ACB9B000AC3214 /* TodoApp.swift */; };
+		87E2E6E727ACB9B000AC3214 /* CoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6CC27ACB9B000AC3214 /* CoreApp.swift */; };
+		87E2E6E827ACB9B000AC3214 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6CE27ACB9B000AC3214 /* TodoModel.swift */; };
+		87E2E6E927ACB9B000AC3214 /* Store+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6D027ACB9B000AC3214 /* Store+.swift */; };
+		87E2E6EA27ACB9B000AC3214 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6D127ACB9B000AC3214 /* ViewStore.swift */; };
+		87E2E75827ACE52200AC3214 /* ReactiveSwiftRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E75727ACE52200AC3214 /* ReactiveSwiftRex */; };
+		87E2E75B27ACE53A00AC3214 /* ReactiveSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E75A27ACE53A00AC3214 /* ReactiveSwiftRequest */; };
+		87E2E75E27ACE54900AC3214 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E75D27ACE54900AC3214 /* Json */; };
+		87E2E76127ACE56100AC3214 /* ConvertSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E76027ACE56100AC3214 /* ConvertSwift */; };
+		87E2E76427ACE5C400AC3214 /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E76327ACE5C400AC3214 /* ReactiveCocoa */; };
+		87E2E76627ACE7E300AC3214 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E76527ACE7E300AC3214 /* MainViewController.swift */; };
+		87E2E76827ACE7F400AC3214 /* RootViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E76727ACE7F400AC3214 /* RootViewControler.swift */; };
+		87E2E76A27ACE80300AC3214 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E76927ACE80300AC3214 /* AuthViewController.swift */; };
+		87E2E76C27ACE80F00AC3214 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E76B27ACE80F00AC3214 /* CounterViewController.swift */; };
+		87E2E77827AD277800AC3214 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E77727AD277800AC3214 /* View+.swift */; };
+		87E2E77E27AD27BE00AC3214 /* CreateTitleMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E77927AD27BE00AC3214 /* CreateTitleMainTableViewCell.swift */; };
+		87E2E77F27AD27BE00AC3214 /* BaseMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E77A27AD27BE00AC3214 /* BaseMainTableViewCell.swift */; };
+		87E2E78027AD27BE00AC3214 /* ButtonReloadMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E77B27AD27BE00AC3214 /* ButtonReloadMainTableViewCell.swift */; };
+		87E2E78127AD27BE00AC3214 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E77C27AD27BE00AC3214 /* MainTableViewCell.swift */; };
+		87E2E78227AD27BE00AC3214 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E77D27AD27BE00AC3214 /* BaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87437EF627ACB7F900244FC8 /* ReactiveSwift+Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveSwift+Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87437EFD27ACB7FA00244FC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87437F0027ACB7FA00244FC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87E2E6B427ACB9B000AC3214 /* MainReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		87E2E6B527ACB9B000AC3214 /* MainState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainState.swift; sourceTree = "<group>"; };
+		87E2E6B627ACB9B000AC3214 /* MainMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMiddleware.swift; sourceTree = "<group>"; };
+		87E2E6B827ACB9B000AC3214 /* MainAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAction.swift; sourceTree = "<group>"; };
+		87E2E6BA27ACB9B000AC3214 /* CounterReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterReducer.swift; sourceTree = "<group>"; };
+		87E2E6BB27ACB9B000AC3214 /* CounterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		87E2E6BD27ACB9B000AC3214 /* CounterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterAction.swift; sourceTree = "<group>"; };
+		87E2E6BE27ACB9B000AC3214 /* CounterMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterMiddleware.swift; sourceTree = "<group>"; };
+		87E2E6C027ACB9B000AC3214 /* AuthMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthMiddleware.swift; sourceTree = "<group>"; };
+		87E2E6C127ACB9B000AC3214 /* AuthState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		87E2E6C327ACB9B000AC3214 /* AuthReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
+		87E2E6C427ACB9B000AC3214 /* AuthAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAction.swift; sourceTree = "<group>"; };
+		87E2E6C627ACB9B000AC3214 /* RootAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootAction.swift; sourceTree = "<group>"; };
+		87E2E6C827ACB9B000AC3214 /* RootState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootState.swift; sourceTree = "<group>"; };
+		87E2E6C927ACB9B000AC3214 /* RootReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
+		87E2E6CA27ACB9B000AC3214 /* RootMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMiddleware.swift; sourceTree = "<group>"; };
+		87E2E6CB27ACB9B000AC3214 /* TodoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
+		87E2E6CC27ACB9B000AC3214 /* CoreApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreApp.swift; sourceTree = "<group>"; };
+		87E2E6CE27ACB9B000AC3214 /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		87E2E6D027ACB9B000AC3214 /* Store+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+.swift"; sourceTree = "<group>"; };
+		87E2E6D127ACB9B000AC3214 /* ViewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
+		87E2E76527ACE7E300AC3214 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		87E2E76727ACE7F400AC3214 /* RootViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControler.swift; sourceTree = "<group>"; };
+		87E2E76927ACE80300AC3214 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		87E2E76B27ACE80F00AC3214 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		87E2E77727AD277800AC3214 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		87E2E77927AD27BE00AC3214 /* CreateTitleMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTitleMainTableViewCell.swift; sourceTree = "<group>"; };
+		87E2E77A27AD27BE00AC3214 /* BaseMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMainTableViewCell.swift; sourceTree = "<group>"; };
+		87E2E77B27AD27BE00AC3214 /* ButtonReloadMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonReloadMainTableViewCell.swift; sourceTree = "<group>"; };
+		87E2E77C27AD27BE00AC3214 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		87E2E77D27AD27BE00AC3214 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87437EF327ACB7F900244FC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E2E75827ACE52200AC3214 /* ReactiveSwiftRex in Frameworks */,
+				87E2E76427ACE5C400AC3214 /* ReactiveCocoa in Frameworks */,
+				87E2E75B27ACE53A00AC3214 /* ReactiveSwiftRequest in Frameworks */,
+				87E2E76127ACE56100AC3214 /* ConvertSwift in Frameworks */,
+				87E2E75E27ACE54900AC3214 /* Json in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87437EED27ACB7F900244FC8 = {
+			isa = PBXGroup;
+			children = (
+				87437EF827ACB7F900244FC8 /* ReactiveSwift+Redux */,
+				87437EF727ACB7F900244FC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87437EF727ACB7F900244FC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87437EF627ACB7F900244FC8 /* ReactiveSwift+Redux.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87437EF827ACB7F900244FC8 /* ReactiveSwift+Redux */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E6B127ACB9B000AC3214 /* CoreApp */,
+				87437EFD27ACB7FA00244FC8 /* Assets.xcassets */,
+				87437EFF27ACB7FA00244FC8 /* Preview Content */,
+			);
+			path = "ReactiveSwift+Redux";
+			sourceTree = "<group>";
+		};
+		87437EFF27ACB7FA00244FC8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				87437F0027ACB7FA00244FC8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		87E2E6B127ACB9B000AC3214 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E77627AD276600AC3214 /* View+ */,
+				87E2E77527AD275F00AC3214 /* Views */,
+				87E2E6CF27ACB9B000AC3214 /* Redux+ */,
+				87E2E6CD27ACB9B000AC3214 /* Models */,
+				87E2E6B227ACB9B000AC3214 /* AppScreens */,
+				87E2E6CB27ACB9B000AC3214 /* TodoApp.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		87E2E6B227ACB9B000AC3214 /* AppScreens */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E6B327ACB9B000AC3214 /* MainScreen */,
+				87E2E6B927ACB9B000AC3214 /* CounterScreen */,
+				87E2E6BF27ACB9B000AC3214 /* AuthScreen */,
+				87E2E6C527ACB9B000AC3214 /* RootScreen */,
+			);
+			path = AppScreens;
+			sourceTree = "<group>";
+		};
+		87E2E6B327ACB9B000AC3214 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E76527ACE7E300AC3214 /* MainViewController.swift */,
+				87E2E6B527ACB9B000AC3214 /* MainState.swift */,
+				87E2E6B827ACB9B000AC3214 /* MainAction.swift */,
+				87E2E6B427ACB9B000AC3214 /* MainReducer.swift */,
+				87E2E6B627ACB9B000AC3214 /* MainMiddleware.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		87E2E6B927ACB9B000AC3214 /* CounterScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E76B27ACE80F00AC3214 /* CounterViewController.swift */,
+				87E2E6BB27ACB9B000AC3214 /* CounterState.swift */,
+				87E2E6BD27ACB9B000AC3214 /* CounterAction.swift */,
+				87E2E6BA27ACB9B000AC3214 /* CounterReducer.swift */,
+				87E2E6BE27ACB9B000AC3214 /* CounterMiddleware.swift */,
+			);
+			path = CounterScreen;
+			sourceTree = "<group>";
+		};
+		87E2E6BF27ACB9B000AC3214 /* AuthScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E76927ACE80300AC3214 /* AuthViewController.swift */,
+				87E2E6C127ACB9B000AC3214 /* AuthState.swift */,
+				87E2E6C427ACB9B000AC3214 /* AuthAction.swift */,
+				87E2E6C327ACB9B000AC3214 /* AuthReducer.swift */,
+				87E2E6C027ACB9B000AC3214 /* AuthMiddleware.swift */,
+			);
+			path = AuthScreen;
+			sourceTree = "<group>";
+		};
+		87E2E6C527ACB9B000AC3214 /* RootScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E76727ACE7F400AC3214 /* RootViewControler.swift */,
+				87E2E6C827ACB9B000AC3214 /* RootState.swift */,
+				87E2E6C627ACB9B000AC3214 /* RootAction.swift */,
+				87E2E6C927ACB9B000AC3214 /* RootReducer.swift */,
+				87E2E6CA27ACB9B000AC3214 /* RootMiddleware.swift */,
+			);
+			path = RootScreen;
+			sourceTree = "<group>";
+		};
+		87E2E6CD27ACB9B000AC3214 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E6CE27ACB9B000AC3214 /* TodoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		87E2E6CF27ACB9B000AC3214 /* Redux+ */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E6CC27ACB9B000AC3214 /* CoreApp.swift */,
+				87E2E6D027ACB9B000AC3214 /* Store+.swift */,
+				87E2E6D127ACB9B000AC3214 /* ViewStore.swift */,
+			);
+			path = "Redux+";
+			sourceTree = "<group>";
+		};
+		87E2E77527AD275F00AC3214 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E77A27AD27BE00AC3214 /* BaseMainTableViewCell.swift */,
+				87E2E77D27AD27BE00AC3214 /* BaseViewController.swift */,
+				87E2E77B27AD27BE00AC3214 /* ButtonReloadMainTableViewCell.swift */,
+				87E2E77927AD27BE00AC3214 /* CreateTitleMainTableViewCell.swift */,
+				87E2E77C27AD27BE00AC3214 /* MainTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		87E2E77627AD276600AC3214 /* View+ */ = {
+			isa = PBXGroup;
+			children = (
+				87E2E77727AD277800AC3214 /* View+.swift */,
+			);
+			path = "View+";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87437EF527ACB7F900244FC8 /* ReactiveSwift+Redux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87437F0427ACB7FA00244FC8 /* Build configuration list for PBXNativeTarget "ReactiveSwift+Redux" */;
+			buildPhases = (
+				87437EF227ACB7F900244FC8 /* Sources */,
+				87437EF327ACB7F900244FC8 /* Frameworks */,
+				87437EF427ACB7F900244FC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ReactiveSwift+Redux";
+			packageProductDependencies = (
+				87E2E75727ACE52200AC3214 /* ReactiveSwiftRex */,
+				87E2E75A27ACE53A00AC3214 /* ReactiveSwiftRequest */,
+				87E2E75D27ACE54900AC3214 /* Json */,
+				87E2E76027ACE56100AC3214 /* ConvertSwift */,
+				87E2E76327ACE5C400AC3214 /* ReactiveCocoa */,
+			);
+			productName = "ReactiveSwift+Redux";
+			productReference = 87437EF627ACB7F900244FC8 /* ReactiveSwift+Redux.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87437EEE27ACB7F900244FC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					87437EF527ACB7F900244FC8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 87437EF127ACB7F900244FC8 /* Build configuration list for PBXProject "ReactiveSwift+Redux" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87437EED27ACB7F900244FC8;
+			packageReferences = (
+				87E2E75627ACE52200AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */,
+				87E2E75927ACE53A00AC3214 /* XCRemoteSwiftPackageReference "Networking" */,
+				87E2E75C27ACE54900AC3214 /* XCRemoteSwiftPackageReference "Json" */,
+				87E2E75F27ACE56100AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */,
+				87E2E76227ACE5C400AC3214 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
+			);
+			productRefGroup = 87437EF727ACB7F900244FC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87437EF527ACB7F900244FC8 /* ReactiveSwift+Redux */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87437EF427ACB7F900244FC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87437F0127ACB7FA00244FC8 /* Preview Assets.xcassets in Resources */,
+				87437EFE27ACB7FA00244FC8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87437EF227ACB7F900244FC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E2E6D427ACB9B000AC3214 /* MainMiddleware.swift in Sources */,
+				87E2E76627ACE7E300AC3214 /* MainViewController.swift in Sources */,
+				87E2E6E327ACB9B000AC3214 /* RootState.swift in Sources */,
+				87E2E6E627ACB9B000AC3214 /* TodoApp.swift in Sources */,
+				87E2E6DD27ACB9B000AC3214 /* AuthState.swift in Sources */,
+				87E2E78227AD27BE00AC3214 /* BaseViewController.swift in Sources */,
+				87E2E6DF27ACB9B000AC3214 /* AuthReducer.swift in Sources */,
+				87E2E78127AD27BE00AC3214 /* MainTableViewCell.swift in Sources */,
+				87E2E77E27AD27BE00AC3214 /* CreateTitleMainTableViewCell.swift in Sources */,
+				87E2E6D727ACB9B000AC3214 /* CounterReducer.swift in Sources */,
+				87E2E78027AD27BE00AC3214 /* ButtonReloadMainTableViewCell.swift in Sources */,
+				87E2E6E027ACB9B000AC3214 /* AuthAction.swift in Sources */,
+				87E2E6E727ACB9B000AC3214 /* CoreApp.swift in Sources */,
+				87E2E6E427ACB9B000AC3214 /* RootReducer.swift in Sources */,
+				87E2E6E827ACB9B000AC3214 /* TodoModel.swift in Sources */,
+				87E2E6DA27ACB9B000AC3214 /* CounterAction.swift in Sources */,
+				87E2E6DC27ACB9B000AC3214 /* AuthMiddleware.swift in Sources */,
+				87E2E76C27ACE80F00AC3214 /* CounterViewController.swift in Sources */,
+				87E2E76827ACE7F400AC3214 /* RootViewControler.swift in Sources */,
+				87E2E6D627ACB9B000AC3214 /* MainAction.swift in Sources */,
+				87E2E6D327ACB9B000AC3214 /* MainState.swift in Sources */,
+				87E2E6D827ACB9B000AC3214 /* CounterState.swift in Sources */,
+				87E2E6D227ACB9B000AC3214 /* MainReducer.swift in Sources */,
+				87E2E6E127ACB9B000AC3214 /* RootAction.swift in Sources */,
+				87E2E6E527ACB9B000AC3214 /* RootMiddleware.swift in Sources */,
+				87E2E77F27AD27BE00AC3214 /* BaseMainTableViewCell.swift in Sources */,
+				87E2E6DB27ACB9B000AC3214 /* CounterMiddleware.swift in Sources */,
+				87E2E76A27ACE80300AC3214 /* AuthViewController.swift in Sources */,
+				87E2E6EA27ACB9B000AC3214 /* ViewStore.swift in Sources */,
+				87E2E77827AD277800AC3214 /* View+.swift in Sources */,
+				87E2E6E927ACB9B000AC3214 /* Store+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		87437F0227ACB7FA00244FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87437F0327ACB7FA00244FC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87437F0527ACB7FA00244FC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReactiveSwift+Redux/Preview Content\"";
+				DEVELOPMENT_TEAM = 2H5PN3F9B6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mike.fullstackswift.ReactiveSwift-Redux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87437F0627ACB7FA00244FC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ReactiveSwift+Redux/Preview Content\"";
+				DEVELOPMENT_TEAM = 2H5PN3F9B6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "mike.fullstackswift.ReactiveSwift-Redux";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87437EF127ACB7F900244FC8 /* Build configuration list for PBXProject "ReactiveSwift+Redux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87437F0227ACB7FA00244FC8 /* Debug */,
+				87437F0327ACB7FA00244FC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87437F0427ACB7FA00244FC8 /* Build configuration list for PBXNativeTarget "ReactiveSwift+Redux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87437F0527ACB7FA00244FC8 /* Debug */,
+				87437F0627ACB7FA00244FC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		87E2E75627ACE52200AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftRex/SwiftRex.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.8.11;
+			};
+		};
+		87E2E75927ACE53A00AC3214 /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FullStack-Swift/Networking";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		87E2E75C27ACE54900AC3214 /* XCRemoteSwiftPackageReference "Json" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FullStack-Swift/Json";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		87E2E75F27ACE56100AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FullStack-Swift/SwiftExtension";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+		87E2E76227ACE5C400AC3214 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa";
+			requirement = {
+				kind = exactVersion;
+				version = 12.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		87E2E75727ACE52200AC3214 /* ReactiveSwiftRex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E75627ACE52200AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;
+			productName = ReactiveSwiftRex;
+		};
+		87E2E75A27ACE53A00AC3214 /* ReactiveSwiftRequest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E75927ACE53A00AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = ReactiveSwiftRequest;
+		};
+		87E2E75D27ACE54900AC3214 /* Json */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E75C27ACE54900AC3214 /* XCRemoteSwiftPackageReference "Json" */;
+			productName = Json;
+		};
+		87E2E76027ACE56100AC3214 /* ConvertSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E75F27ACE56100AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */;
+			productName = ConvertSwift;
+		};
+		87E2E76327ACE5C400AC3214 /* ReactiveCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E76227ACE5C400AC3214 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */;
+			productName = ReactiveCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 87437EEE27ACB7F900244FC8 /* Project object */;
+}
