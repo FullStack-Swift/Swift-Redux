@@ -2,6 +2,7 @@ import SwiftRex
 import SwiftUI
 import UIKit
 import ConvertSwift
+import RxSwift
 import RxCocoa
 
 final class MainViewController: BaseViewController {
@@ -34,8 +35,9 @@ final class MainViewController: BaseViewController {
       // navigationView
     let buttonLogout = UIButton(type: .system)
     buttonLogout.setTitle("Logout", for: .normal)
-    buttonLogout.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+    buttonLogout.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
     buttonLogout.setTitleColor(UIColor(Color.blue), for: .normal)
+    buttonLogout.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
     let rightBarButtonItem = UIBarButtonItem(customView: buttonLogout)
     navigationController?.navigationBar.prefersLargeTitles = true
     navigationItem.largeTitleDisplayMode = .always
@@ -150,6 +152,7 @@ extension MainViewController: UITableViewDataSource {
         .rx.text.orEmpty
         .compactMap{$0}
         .map{MainAction.changeText($0)}
+        .observe(on: MainScheduler.asyncInstance)
         .bind(to: viewStore.action)
         .disposed(by: cell.disposeBag)
       return cell

@@ -17,6 +17,8 @@ let MainReducer = Reducer<MainAction, MainState>.reduce { action, state in
     break
   case .changeText(let text):
     state.title = text
+  case .resetText:
+    state.title = ""
       /// networking
   case .responseTodo(let data):
     state.isLoading = false

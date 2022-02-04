@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		872172A429C2B1FB00650C0E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 872172A329C2B1FB00650C0E /* Realm */; };
+		872172A629C2B1FB00650C0E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 872172A529C2B1FB00650C0E /* RealmSwift */; };
 		8741CBB327ACB80F00A40F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8741CBB227ACB80F00A40F7C /* Assets.xcassets */; };
 		8741CBB627ACB80F00A40F7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8741CBB527ACB80F00A40F7C /* Preview Assets.xcassets */; };
 		87E2E63327ACB8C500AC3214 /* RxSwiftRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E63227ACB8C500AC3214 /* RxSwiftRex */; };
@@ -33,7 +35,6 @@
 		87E2E67227ACB96300AC3214 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E65727ACB96300AC3214 /* TodoApp.swift */; };
 		87E2E67327ACB96300AC3214 /* CoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E65827ACB96300AC3214 /* CoreApp.swift */; };
 		87E2E67427ACB96300AC3214 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E65A27ACB96300AC3214 /* TodoModel.swift */; };
-		87E2E67527ACB96300AC3214 /* Store+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E65C27ACB96300AC3214 /* Store+.swift */; };
 		87E2E67627ACB96300AC3214 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E65D27ACB96300AC3214 /* ViewStore.swift */; };
 		87E2E6ED27ACBB0300AC3214 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E6EC27ACBB0300AC3214 /* RxCocoa */; };
 		87E2E6EF27ACBB0300AC3214 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E6EE27ACBB0300AC3214 /* RxRelay */; };
@@ -73,7 +74,6 @@
 		87E2E65727ACB96300AC3214 /* TodoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		87E2E65827ACB96300AC3214 /* CoreApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreApp.swift; sourceTree = "<group>"; };
 		87E2E65A27ACB96300AC3214 /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
-		87E2E65C27ACB96300AC3214 /* Store+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+.swift"; sourceTree = "<group>"; };
 		87E2E65D27ACB96300AC3214 /* ViewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 		87E2E76D27ACE81F00AC3214 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		87E2E76F27ACE82D00AC3214 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872172A629C2B1FB00650C0E /* RealmSwift in Frameworks */,
+				872172A429C2B1FB00650C0E /* Realm in Frameworks */,
 				87E2E6EF27ACBB0300AC3214 /* RxRelay in Frameworks */,
 				87E2E63627ACB8E300AC3214 /* ConvertSwift in Frameworks */,
 				87E2E63927ACB8FB00AC3214 /* RxSwiftRequest in Frameworks */,
@@ -223,7 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				87E2E65827ACB96300AC3214 /* CoreApp.swift */,
-				87E2E65C27ACB96300AC3214 /* Store+.swift */,
 				87E2E65D27ACB96300AC3214 /* ViewStore.swift */,
 			);
 			path = "Redux+";
@@ -272,6 +273,8 @@
 				87E2E63B27ACB91100AC3214 /* Json */,
 				87E2E6EC27ACBB0300AC3214 /* RxCocoa */,
 				87E2E6EE27ACBB0300AC3214 /* RxRelay */,
+				872172A329C2B1FB00650C0E /* Realm */,
+				872172A529C2B1FB00650C0E /* RealmSwift */,
 			);
 			productName = "RxSwift+Redux";
 			productReference = 8741CBAB27ACB80E00A40F7C /* RxSwift+Redux.app */;
@@ -307,6 +310,7 @@
 				87E2E63727ACB8FB00AC3214 /* XCRemoteSwiftPackageReference "Networking" */,
 				87E2E63A27ACB91100AC3214 /* XCRemoteSwiftPackageReference "Json" */,
 				87E2E6EB27ACBB0300AC3214 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				872172A229C2B1FB00650C0E /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 8741CBAC27ACB80E00A40F7C /* Products */;
 			projectDirPath = "";
@@ -359,7 +363,6 @@
 				87E2E67427ACB96300AC3214 /* TodoModel.swift in Sources */,
 				87E2E66B27ACB96300AC3214 /* AuthReducer.swift in Sources */,
 				87E2E66627ACB96300AC3214 /* CounterAction.swift in Sources */,
-				87E2E67527ACB96300AC3214 /* Store+.swift in Sources */,
 				87E2E67027ACB96300AC3214 /* RootReducer.swift in Sources */,
 				87E2E66727ACB96300AC3214 /* CounterMiddleware.swift in Sources */,
 				87E2E65E27ACB96300AC3214 /* MainReducer.swift in Sources */,
@@ -572,6 +575,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		872172A229C2B1FB00650C0E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.37.0;
+			};
+		};
 		87E2E63127ACB8C500AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftRex/SwiftRex.git";
@@ -615,6 +626,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		872172A329C2B1FB00650C0E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 872172A229C2B1FB00650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		872172A529C2B1FB00650C0E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 872172A229C2B1FB00650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
 		87E2E63227ACB8C500AC3214 /* RxSwiftRex */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E63127ACB8C500AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;

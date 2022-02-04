@@ -1,7 +1,7 @@
 import SwiftUI
 import ReactiveSwiftRex
 import SwiftRex
-import ConvertSwift
+import Transform
 
 struct CounterView: View {
   
@@ -14,7 +14,7 @@ struct CounterView: View {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .reactive(initialValue: CounterState()),
       reducer: CounterReducer,
-      middleware: IdentityMiddleware<CounterAction, CounterAction, CounterState>()
+      middleware: CounterMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore

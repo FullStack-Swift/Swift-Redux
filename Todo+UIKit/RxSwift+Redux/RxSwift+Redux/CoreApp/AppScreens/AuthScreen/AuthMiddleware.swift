@@ -10,14 +10,14 @@ class AuthMiddleware: MiddlewareProtocol {
   typealias StateType = AuthState
   
   func handle(action: InputActionType, from dispatcher: ActionSource, state: @escaping GetState<StateType>) -> IO<OutputActionType> {
-    let sut = IO<OutputActionType> { output in
+    let io = IO<OutputActionType> { output in
       switch action {
-      case .login:
-        output.dispatch(.changeRootScreen(.main))
-      default:
-        break
+        case .login:
+          output.dispatch(.changeRootScreen(.main))
+        default:
+          break
       }
     }
-    return sut
+    return io
   }
 }

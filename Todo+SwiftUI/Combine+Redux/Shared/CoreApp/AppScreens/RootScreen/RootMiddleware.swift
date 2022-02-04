@@ -1,7 +1,4 @@
 import Foundation
-import SwiftRex
-import CombineRex
-import Combine
 
 class RootMiddleware: MiddlewareProtocol {
   
@@ -12,26 +9,28 @@ class RootMiddleware: MiddlewareProtocol {
   typealias StateType = RootState
   
   func handle(action: InputActionType, from dispatcher: ActionSource, state: @escaping GetState<StateType>) -> IO<OutputActionType> {
-    let sut = IO<OutputActionType> { output in
+    let io = IO<OutputActionType> { output in
+      let state = state()
+      print(state)
       switch action {
-      case .mainAction(let mainAction):
-        switch mainAction {
-        case .changeRootScreen(let screen):
-          output.dispatch(.changeRootScreen(screen))
+        case .mainAction(let mainAction):
+          switch mainAction {
+            case .changeRootScreen(let screen):
+              output.dispatch(.changeRootScreen(screen))
+            default:
+              break
+          }
+        case .authAction(let authAction):
+          switch authAction {
+            case .changeRootScreen(let screen):
+              output.dispatch(.changeRootScreen(screen))
+            default:
+              break
+          }
         default:
           break
-        }
-      case .authAction(let authAction):
-        switch authAction {
-        case .changeRootScreen(let screen):
-          output.dispatch(.changeRootScreen(screen))
-        default:
-           break
-        }
-      default:
-        break
       }
     }
-    return sut
+    return io
   }
 }

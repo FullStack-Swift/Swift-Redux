@@ -4,6 +4,7 @@ enum AuthAction: Equatable {
   case viewOnAppear
   case viewOnDisappear
   case none
-  case login
+  case requestLogin
+  case responeLogin(Result<Bool, Never>)
   case changeRootScreen(RootScreen)
 }

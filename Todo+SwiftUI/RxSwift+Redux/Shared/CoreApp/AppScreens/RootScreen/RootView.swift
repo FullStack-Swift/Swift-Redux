@@ -4,17 +4,18 @@ import RxSwiftRex
 
 struct RootView: View {
   
-  private let store: ReduxStoreBase<RootAction, RootState>
+  private let store: AnyStoreType<RootAction, RootState>
   
   @ObservedObject
   private var viewStore: ViewStore<RootAction, RootState>
   
-  init(store: ReduxStoreBase<RootAction, RootState>? = nil) {
+  init(store: StoreProjection<RootAction, RootState>? = nil) {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .rx(initialValue: RootState()),
-      reducer: rootReducer,
-      middleware: rootMiddleware
+      reducer: RootReducer,
+      middleware: RootMiddleware()
     )
+      .eraseToAnyStoreType()
     self.store = unwrapStore
     self.viewStore = unwrapStore.asViewStore(initialState: RootState())
   }

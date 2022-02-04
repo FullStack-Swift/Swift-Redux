@@ -1,88 +1,113 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
-        "state": {
-          "branch": null,
-          "revision": "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
-          "version": "5.5.0"
-        }
-      },
-      {
-        "package": "CombineCocoa",
-        "repositoryURL": "https://github.com/CombineCommunity/CombineCocoa",
-        "state": {
-          "branch": null,
-          "revision": "4e262c2f9fb1cee1cb3be5717f7e6b55eb823971",
-          "version": "0.4.0"
-        }
-      },
-      {
-        "package": "Json",
-        "repositoryURL": "https://github.com/FullStack-Swift/Json",
-        "state": {
-          "branch": null,
-          "revision": "b45da4388574b3dfadf7f166aaa962c561e34dd5",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "Networking",
-        "repositoryURL": "https://github.com/FullStack-Swift/Networking",
-        "state": {
-          "branch": null,
-          "revision": "fdbb1c94caf8ead0a26c622e8c08cbd6f6ebb8ac",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "ReactiveCocoa",
-        "repositoryURL": "https://github.com/ReactiveCocoa/ReactiveCocoa",
-        "state": {
-          "branch": null,
-          "revision": "8a5b07b18c6abb8e12fb845bf742675dc4914ed8",
-          "version": "12.0.0"
-        }
-      },
-      {
-        "package": "RxSwift",
-        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
-        "state": {
-          "branch": null,
-          "revision": "b4307ba0b6425c0ba4178e138799946c3da594f8",
-          "version": "6.5.0"
-        }
-      },
-      {
-        "package": "Starscream",
-        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
-        "state": {
-          "branch": null,
-          "revision": "df8d82047f6654d8e4b655d1b1525c64e1059d21",
-          "version": "4.0.4"
-        }
-      },
-      {
-        "package": "SwiftExtension",
-        "repositoryURL": "https://github.com/FullStack-Swift/SwiftExtension",
-        "state": {
-          "branch": null,
-          "revision": "cdbd56e6cf32fa0eb97a1fba445736cbe8b8e622",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "SwiftRex",
-        "repositoryURL": "https://github.com/SwiftRex/SwiftRex.git",
-        "state": {
-          "branch": null,
-          "revision": "109b82bd32cd1d1b417d000deb020254dccea97b",
-          "version": "0.8.11"
-        }
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
+        "version" : "5.5.0"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "combinecocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CombineCommunity/CombineCocoa",
+      "state" : {
+        "revision" : "4e262c2f9fb1cee1cb3be5717f7e6b55eb823971",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "json",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FullStack-Swift/Json",
+      "state" : {
+        "revision" : "b45da4388574b3dfadf7f166aaa962c561e34dd5",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FullStack-Swift/Networking",
+      "state" : {
+        "revision" : "fdbb1c94caf8ead0a26c622e8c08cbd6f6ebb8ac",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "reactivecocoa",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveCocoa/ReactiveCocoa",
+      "state" : {
+        "revision" : "8a5b07b18c6abb8e12fb845bf742675dc4914ed8",
+        "version" : "12.0.0"
+      }
+    },
+    {
+      "identity" : "reactiveswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
+      "state" : {
+        "revision" : "efb2f0a6f6c8739cce8fb14148a5bd3c83f2f91d",
+        "version" : "7.0.0"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "dd91f5f967c4ae89c37e24ab2a0315c31106648f",
+        "version" : "13.6.0"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "revision" : "8ac6fe1aa5d0fb0100062d80863416a4d70de8ca",
+        "version" : "10.37.0"
+      }
+    },
+    {
+      "identity" : "rxswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ReactiveX/RxSwift.git",
+      "state" : {
+        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
+        "version" : "6.5.0"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream.git",
+      "state" : {
+        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+        "version" : "4.0.4"
+      }
+    },
+    {
+      "identity" : "swiftextension",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FullStack-Swift/SwiftExtension",
+      "state" : {
+        "revision" : "cdbd56e6cf32fa0eb97a1fba445736cbe8b8e622",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "swiftrex",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftRex/SwiftRex.git",
+      "state" : {
+        "revision" : "109b82bd32cd1d1b417d000deb020254dccea97b",
+        "version" : "0.8.11"
+      }
+    }
+  ],
+  "version" : 2
 }

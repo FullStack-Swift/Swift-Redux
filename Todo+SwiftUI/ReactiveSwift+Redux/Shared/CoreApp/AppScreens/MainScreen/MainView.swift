@@ -12,7 +12,7 @@ struct MainView: View {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .reactive(initialValue: MainState()),
       reducer: MainReducer,
-      middleware: IdentityMiddleware<MainAction, MainAction, MainState>()
+      middleware: MainMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore

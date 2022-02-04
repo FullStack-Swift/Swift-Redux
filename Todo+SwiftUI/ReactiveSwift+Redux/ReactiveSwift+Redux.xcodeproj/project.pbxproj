@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871FE82629E7AEC4002635BB /* ReactiveSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE82529E7AEC4002635BB /* ReactiveSwiftRequest */; };
+		871FE82829E7AEC4002635BB /* ReactiveSwiftSocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE82729E7AEC4002635BB /* ReactiveSwiftSocketIO */; };
+		871FE82A29E7AEC4002635BB /* ReactiveSwiftWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE82929E7AEC4002635BB /* ReactiveSwiftWebSocket */; };
+		871FE82C29E7B028002635BB /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE82B29E7B028002635BB /* Json */; };
+		871FE82E29E7B028002635BB /* Transform in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE82D29E7B028002635BB /* Transform */; };
+		871FE83B29E7B899002635BB /* DependencyValues+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871FE83A29E7B899002635BB /* DependencyValues+.swift */; };
+		871FE83E29E7B96F002635BB /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE83D29E7B96F002635BB /* Dependencies */; };
+		8721729329C2A91200650C0E /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8721729229C2A91200650C0E /* ViewStore.swift */; };
+		8721729429C2A91200650C0E /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8721729229C2A91200650C0E /* ViewStore.swift */; };
+		872172A929C2B24300650C0E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 872172A829C2B24300650C0E /* Realm */; };
+		872172AB29C2B24300650C0E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 872172AA29C2B24300650C0E /* RealmSwift */; };
 		8749129927ACB48300168364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8749128727ACB48300168364 /* Assets.xcassets */; };
 		8749129A27ACB48300168364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8749128727ACB48300168364 /* Assets.xcassets */; };
 		8749134727ACB68400168364 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749132927ACB68400168364 /* MainReducer.swift */; };
@@ -55,14 +66,7 @@
 		8749137227ACB68400168364 /* RootMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749134227ACB68400168364 /* RootMiddleware.swift */; };
 		8749137327ACB68400168364 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749134327ACB68400168364 /* TodoApp.swift */; };
 		8749137427ACB68400168364 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749134327ACB68400168364 /* TodoApp.swift */; };
-		8749137527ACB68400168364 /* Store+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749134527ACB68400168364 /* Store+.swift */; };
-		8749137627ACB68400168364 /* Store+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749134527ACB68400168364 /* Store+.swift */; };
-		8749137727ACB68400168364 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749134627ACB68400168364 /* ViewStore.swift */; };
-		8749137827ACB68400168364 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749134627ACB68400168364 /* ViewStore.swift */; };
 		87E2E70127ACC5DF00AC3214 /* ReactiveSwiftRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E70027ACC5DF00AC3214 /* ReactiveSwiftRex */; };
-		87E2E70427ACC5F000AC3214 /* ReactiveSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E70327ACC5F000AC3214 /* ReactiveSwiftRequest */; };
-		87E2E70727ACC5FD00AC3214 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E70627ACC5FD00AC3214 /* Json */; };
-		87E2E70A27ACC60B00AC3214 /* ConvertSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E70927ACC60B00AC3214 /* ConvertSwift */; };
 		87E2E70C27ACD4CE00AC3214 /* ReactiveSwift+Redux.app in Resources */ = {isa = PBXBuildFile; fileRef = 8749128C27ACB48300168364 /* ReactiveSwift+Redux.app */; };
 		87E2E71027ACD8CB00AC3214 /* ReactiveSwiftRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E70F27ACD8CB00AC3214 /* ReactiveSwiftRex */; };
 		87E2E71227ACD8D400AC3214 /* ReactiveSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E71127ACD8D400AC3214 /* ReactiveSwiftRequest */; };
@@ -80,7 +84,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		871FE84229E7BB84002635BB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		871FE83A29E7B899002635BB /* DependencyValues+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyValues+.swift"; sourceTree = "<group>"; };
+		8721729229C2A91200650C0E /* ViewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 		8749128727ACB48300168364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8749128C27ACB48300168364 /* ReactiveSwift+Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveSwift+Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8749129227ACB48300168364 /* ReactiveSwift+Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReactiveSwift+Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,8 +127,6 @@
 		8749134127ACB68400168364 /* RootReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
 		8749134227ACB68400168364 /* RootMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMiddleware.swift; sourceTree = "<group>"; };
 		8749134327ACB68400168364 /* TodoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
-		8749134527ACB68400168364 /* Store+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+.swift"; sourceTree = "<group>"; };
-		8749134627ACB68400168364 /* ViewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +134,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871FE82C29E7B028002635BB /* Json in Frameworks */,
+				872172AB29C2B24300650C0E /* RealmSwift in Frameworks */,
+				871FE82629E7AEC4002635BB /* ReactiveSwiftRequest in Frameworks */,
+				871FE83E29E7B96F002635BB /* Dependencies in Frameworks */,
 				87E2E70127ACC5DF00AC3214 /* ReactiveSwiftRex in Frameworks */,
-				87E2E70427ACC5F000AC3214 /* ReactiveSwiftRequest in Frameworks */,
-				87E2E70A27ACC60B00AC3214 /* ConvertSwift in Frameworks */,
-				87E2E70727ACC5FD00AC3214 /* Json in Frameworks */,
+				872172A929C2B24300650C0E /* Realm in Frameworks */,
+				871FE82E29E7B028002635BB /* Transform in Frameworks */,
+				871FE82829E7AEC4002635BB /* ReactiveSwiftSocketIO in Frameworks */,
+				871FE82A29E7AEC4002635BB /* ReactiveSwiftWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +160,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		871FE83929E7B889002635BB /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				871FE83A29E7B899002635BB /* DependencyValues+.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		8749127F27ACB48200168364 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +207,7 @@
 		8749132727ACB68400168364 /* CoreApp */ = {
 			isa = PBXGroup;
 			children = (
+				871FE83929E7B889002635BB /* Dependencies */,
 				8749132F27ACB68400168364 /* Models */,
 				8749134427ACB68400168364 /* Redux+ */,
 				874913CC27ACB6D500168364 /* AppScreens */,
@@ -245,8 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				8749132E27ACB68400168364 /* CoreApp.swift */,
-				8749134527ACB68400168364 /* Store+.swift */,
-				8749134627ACB68400168364 /* ViewStore.swift */,
+				8721729229C2A91200650C0E /* ViewStore.swift */,
 			);
 			path = "Redux+";
 			sourceTree = "<group>";
@@ -279,6 +309,7 @@
 				8749128827ACB48300168364 /* Sources */,
 				8749128927ACB48300168364 /* Frameworks */,
 				8749128A27ACB48300168364 /* Resources */,
+				871FE84229E7BB84002635BB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,9 +318,14 @@
 			name = "ReactiveSwift+Redux (iOS)";
 			packageProductDependencies = (
 				87E2E70027ACC5DF00AC3214 /* ReactiveSwiftRex */,
-				87E2E70327ACC5F000AC3214 /* ReactiveSwiftRequest */,
-				87E2E70627ACC5FD00AC3214 /* Json */,
-				87E2E70927ACC60B00AC3214 /* ConvertSwift */,
+				872172A829C2B24300650C0E /* Realm */,
+				872172AA29C2B24300650C0E /* RealmSwift */,
+				871FE82529E7AEC4002635BB /* ReactiveSwiftRequest */,
+				871FE82729E7AEC4002635BB /* ReactiveSwiftSocketIO */,
+				871FE82929E7AEC4002635BB /* ReactiveSwiftWebSocket */,
+				871FE82B29E7B028002635BB /* Json */,
+				871FE82D29E7B028002635BB /* Transform */,
+				871FE83D29E7B96F002635BB /* Dependencies */,
 			);
 			productName = "ReactiveSwift+Redux (iOS)";
 			productReference = 8749128C27ACB48300168364 /* ReactiveSwift+Redux.app */;
@@ -327,7 +363,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					8749128B27ACB48300168364 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -351,6 +387,8 @@
 				87E2E70227ACC5F000AC3214 /* XCRemoteSwiftPackageReference "Networking" */,
 				87E2E70527ACC5FD00AC3214 /* XCRemoteSwiftPackageReference "Json" */,
 				87E2E70827ACC60B00AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */,
+				872172A729C2B24300650C0E /* XCRemoteSwiftPackageReference "realm-swift" */,
+				871FE83C29E7B96F002635BB /* XCRemoteSwiftPackageReference "swift-dependencies" */,
 			);
 			productRefGroup = 8749128D27ACB48300168364 /* Products */;
 			projectDirPath = "";
@@ -388,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8749135727ACB68400168364 /* CounterState.swift in Sources */,
+				871FE83B29E7B899002635BB /* DependencyValues+.swift in Sources */,
 				8749134B27ACB68400168364 /* MainMiddleware.swift in Sources */,
 				8749135527ACB68400168364 /* CounterReducer.swift in Sources */,
 				8749137127ACB68400168364 /* RootMiddleware.swift in Sources */,
@@ -409,9 +448,8 @@
 				8749136327ACB68400168364 /* AuthView.swift in Sources */,
 				8749134727ACB68400168364 /* MainReducer.swift in Sources */,
 				8749135927ACB68400168364 /* CounterView.swift in Sources */,
-				8749137727ACB68400168364 /* ViewStore.swift in Sources */,
+				8721729329C2A91200650C0E /* ViewStore.swift in Sources */,
 				8749136127ACB68400168364 /* AuthState.swift in Sources */,
-				8749137527ACB68400168364 /* Store+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,9 +479,8 @@
 				8749136427ACB68400168364 /* AuthView.swift in Sources */,
 				8749134827ACB68400168364 /* MainReducer.swift in Sources */,
 				8749135A27ACB68400168364 /* CounterView.swift in Sources */,
-				8749137827ACB68400168364 /* ViewStore.swift in Sources */,
+				8721729429C2A91200650C0E /* ViewStore.swift in Sources */,
 				8749136227ACB68400168364 /* AuthState.swift in Sources */,
-				8749137627ACB68400168364 /* Store+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +529,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -553,6 +591,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -644,6 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2H5PN3F9B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -673,6 +713,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2H5PN3F9B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -725,6 +766,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		871FE83C29E7B96F002635BB /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.2.0;
+			};
+		};
+		872172A729C2B24300650C0E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.37.0;
+			};
+		};
 		87E2E6FF27ACC5DF00AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftRex/SwiftRex.git";
@@ -737,48 +794,73 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/Networking";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		87E2E70527ACC5FD00AC3214 /* XCRemoteSwiftPackageReference "Json" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/Json";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		87E2E70827ACC60B00AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/SwiftExtension";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		87E2E70027ACC5DF00AC3214 /* ReactiveSwiftRex */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E6FF27ACC5DF00AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;
-			productName = ReactiveSwiftRex;
-		};
-		87E2E70327ACC5F000AC3214 /* ReactiveSwiftRequest */ = {
+		871FE82529E7AEC4002635BB /* ReactiveSwiftRequest */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E70227ACC5F000AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
 			productName = ReactiveSwiftRequest;
 		};
-		87E2E70627ACC5FD00AC3214 /* Json */ = {
+		871FE82729E7AEC4002635BB /* ReactiveSwiftSocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E70227ACC5F000AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = ReactiveSwiftSocketIO;
+		};
+		871FE82929E7AEC4002635BB /* ReactiveSwiftWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E70227ACC5F000AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = ReactiveSwiftWebSocket;
+		};
+		871FE82B29E7B028002635BB /* Json */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E70527ACC5FD00AC3214 /* XCRemoteSwiftPackageReference "Json" */;
 			productName = Json;
 		};
-		87E2E70927ACC60B00AC3214 /* ConvertSwift */ = {
+		871FE82D29E7B028002635BB /* Transform */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E70827ACC60B00AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */;
-			productName = ConvertSwift;
+			productName = Transform;
+		};
+		871FE83D29E7B96F002635BB /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 871FE83C29E7B96F002635BB /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		872172A829C2B24300650C0E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 872172A729C2B24300650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		872172AA29C2B24300650C0E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 872172A729C2B24300650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		87E2E70027ACC5DF00AC3214 /* ReactiveSwiftRex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E6FF27ACC5DF00AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;
+			productName = ReactiveSwiftRex;
 		};
 		87E2E70F27ACD8CB00AC3214 /* ReactiveSwiftRex */ = {
 			isa = XCSwiftPackageProductDependency;

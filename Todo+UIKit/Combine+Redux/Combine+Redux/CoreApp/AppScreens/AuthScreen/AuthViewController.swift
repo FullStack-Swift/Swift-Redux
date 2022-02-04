@@ -14,7 +14,7 @@ final class AuthViewController: BaseViewController {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: AuthState()),
       reducer: AuthReducer,
-      middleware: IdentityMiddleware<AuthAction, AuthAction, AuthState>()
+      middleware: AuthMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore
@@ -40,7 +40,7 @@ final class AuthViewController: BaseViewController {
       buttonLogin.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor),
     ])
     
-      //bind view to viewstore
+    // bind view to viewstore
     buttonLogin.tapPublisher
       .map { AuthAction.login }
       .subscribe(viewStore.action)

@@ -1,25 +1,26 @@
-import SwiftRex
-import Combine
+import Foundation
 
 class CounterMiddleware: MiddlewareProtocol {
-  
+
   typealias InputActionType = CounterAction
-  
+
   typealias OutputActionType = CounterAction
-  
+
   typealias StateType = CounterState
 
   func handle(action: InputActionType, from dispatcher: ActionSource, state: @escaping GetState<StateType>) -> IO<OutputActionType> {
-    let sut = IO<OutputActionType> { output in
+    let io = IO<OutputActionType> { output in
+      let state = state()
+      print(state)
       switch action {
       case .increment:
-        print("increment")
+          break
       case .decrement:
-        print("decrement")
+          break
       default:
         break
       }
     }
-    return sut
+    return io
   }
 }

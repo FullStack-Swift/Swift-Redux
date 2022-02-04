@@ -1,7 +1,6 @@
-import ReactiveSwift
-import SwiftRex
 import Combine
 import SwiftUI
+import ReactiveSwift
 
   /// A ``ViewStore`` is an object that can observe state changes and send actions. They are most
   /// commonly used in views, such as SwiftUI views, UIView or UIViewController, but they can be
@@ -307,6 +306,14 @@ extension ViewStore where State == Void {
   public convenience init<S>(initialState: State, store: S)
   where S: StoreType, S.ActionType == Action, S.StateType == State {
     self.init(initialState: initialState, store: store, emitsValue: .never)
+  }
+}
+
+extension StoreType where StateType: Equatable {
+  public func asViewStore(
+    initialState: StateType
+  ) -> ViewStore<ActionType, StateType> {
+    .init(initialState: initialState, store: self, emitsValue: .whenDifferent)
   }
 }
 

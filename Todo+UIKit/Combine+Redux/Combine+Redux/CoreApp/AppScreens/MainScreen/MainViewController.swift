@@ -16,7 +16,7 @@ final class MainViewController: BaseViewController {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: MainState()),
       reducer: MainReducer,
-      middleware: IdentityMiddleware<MainAction, MainAction, MainState>()
+      middleware: MainMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore
@@ -36,8 +36,9 @@ final class MainViewController: BaseViewController {
     // navigationView
     let buttonLogout = UIButton(type: .system)
     buttonLogout.setTitle("Logout", for: .normal)
-    buttonLogout.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+    buttonLogout.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
     buttonLogout.setTitleColor(UIColor(Color.blue), for: .normal)
+    buttonLogout.contentEdgeInsets = UIEdgeInsets(top: 5,left: 5,bottom: 5,right: 5)
     let rightBarButtonItem = UIBarButtonItem(customView: buttonLogout)
     navigationController?.navigationBar.prefersLargeTitles = true
     navigationItem.largeTitleDisplayMode = .always
@@ -60,7 +61,7 @@ final class MainViewController: BaseViewController {
       tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
       tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -10)
     ])
-
+    
     //bind view to viewstore
     buttonLogout.tapPublisher
       .map{MainAction.logout}
@@ -106,90 +107,90 @@ extension MainViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     switch section {
-    case 0:
-      return 1
-    case 1:
-      return 1
-    case 2:
-      return viewStore.todos.count
-    default:
-      return 0
+      case 0:
+        return 1
+      case 1:
+        return 1
+      case 2:
+        return viewStore.todos.count
+      default:
+        return 0
     }
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     switch indexPath.section {
-    case 0:
-      let cell = tableView.dequeueReusableCell(ButtonReloadMainTableViewCell.self, for: indexPath)
-      cell.selectionStyle = .none
-      viewStore.publisher.isLoading
-        .sink(receiveValue: { value in
-          cell.buttonReload.isHidden = value
-          if value {
-            cell.activityIndicator.startAnimating()
-          } else {
-            cell.activityIndicator.stopAnimating()
-          }
-        })
-        .store(in: &cell.cancellables)
-      cell.buttonReload
-        .tapPublisher
-        .map{MainAction.getTodo}
-        .subscribe(viewStore.action)
-        .store(in: &cell.cancellables)
-      return cell
-    case 1:
-      let cell = tableView.dequeueReusableCell(CreateTitleMainTableViewCell.self, for: indexPath)
-      viewStore.publisher.title
-        .map {$0}
-        .assign(to: \.text, on: cell.titleTextField)
-        .store(in: &cell.cancellables)
-      viewStore.publisher.title.isEmpty
-        .sink(receiveValue: { value in
-          cell.createButton.setTitleColor(value ? UIColor(Color.gray) : UIColor(Color.green), for: .normal)
-        })
-        .store(in: &cell.cancellables)
-      cell.createButton
-        .tapPublisher
-        .map {MainAction.viewCreateTodo}
-        .subscribe(viewStore.action)
-        .store(in: &cell.cancellables)
-      cell.titleTextField
-        .textPublisher
-        .compactMap{$0}
-        .map{MainAction.changeText($0)}
-        .subscribe(viewStore.action)
-        .store(in: &cell.cancellables)
-      return cell
-    case 2:
-      let cell = tableView.dequeueReusableCell(MainTableViewCell.self, for: indexPath)
-      let todo = viewStore.todos[indexPath.row]
-      cell.bind(todo)
-      cell.deleteButton
-        .tapPublisher
-        .map{MainAction.deleteTodo(todo)}
-        .subscribe(viewStore.action)
-        .store(in: &cell.cancellables)
-      cell.tapGesture
-        .tapPublisher
-        .map {_ in MainAction.toggleTodo(todo)}
-        .subscribe(viewStore.action)
-        .store(in: &cell.cancellables)
-      return cell
-    default:
-      let cell = tableView.dequeueReusableCell(MainTableViewCell.self, for: indexPath)
-      return cell
+      case 0:
+        let cell = tableView.dequeueReusableCell(ButtonReloadMainTableViewCell.self, for: indexPath)
+        cell.selectionStyle = .none
+        viewStore.publisher.isLoading
+          .sink(receiveValue: { value in
+            cell.buttonReload.isHidden = value
+            if value {
+              cell.activityIndicator.startAnimating()
+            } else {
+              cell.activityIndicator.stopAnimating()
+            }
+          })
+          .store(in: &cell.cancellables)
+        cell.buttonReload
+          .tapPublisher
+          .map{MainAction.getTodo}
+          .subscribe(viewStore.action)
+          .store(in: &cell.cancellables)
+        return cell
+      case 1:
+        let cell = tableView.dequeueReusableCell(CreateTitleMainTableViewCell.self, for: indexPath)
+        viewStore.publisher.title
+          .map {$0}
+          .assign(to: \.text, on: cell.titleTextField)
+          .store(in: &cell.cancellables)
+        viewStore.publisher.title.isEmpty
+          .sink(receiveValue: { value in
+            cell.createButton.setTitleColor(value ? UIColor(Color.gray) : UIColor(Color.green), for: .normal)
+          })
+          .store(in: &cell.cancellables)
+        cell.createButton
+          .tapPublisher
+          .map {MainAction.viewCreateTodo}
+          .subscribe(viewStore.action)
+          .store(in: &cell.cancellables)
+        cell.titleTextField
+          .textPublisher
+          .compactMap{$0}
+          .map{MainAction.changeText($0)}
+          .subscribe(viewStore.action)
+          .store(in: &cell.cancellables)
+        return cell
+      case 2:
+        let cell = tableView.dequeueReusableCell(MainTableViewCell.self, for: indexPath)
+        let todo = viewStore.todos[indexPath.row]
+        cell.bind(todo)
+        cell.deleteButton
+          .tapPublisher
+          .map{MainAction.deleteTodo(todo)}
+          .subscribe(viewStore.action)
+          .store(in: &cell.cancellables)
+        cell.tapGesture
+          .tapPublisher
+          .map {_ in MainAction.toggleTodo(todo)}
+          .subscribe(viewStore.action)
+          .store(in: &cell.cancellables)
+        return cell
+      default:
+        let cell = tableView.dequeueReusableCell(MainTableViewCell.self, for: indexPath)
+        return cell
     }
   }
 }
 
-  // MARK: - UITableViewDelegate
+// MARK: - UITableViewDelegate
 extension MainViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 60
   }
 }
-  // MARK: - PreviewProvider
+// MARK: - PreviewProvider
 struct MainViewController_Previews: PreviewProvider {
   static var previews: some View {
     let vc = MainViewController()

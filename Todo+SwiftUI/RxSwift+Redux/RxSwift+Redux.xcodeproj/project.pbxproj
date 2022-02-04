@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871FE83029E7B0AD002635BB /* RxSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE82F29E7B0AD002635BB /* RxSwiftRequest */; };
+		871FE83229E7B0AD002635BB /* RxSwiftSocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE83129E7B0AD002635BB /* RxSwiftSocketIO */; };
+		871FE83429E7B0AD002635BB /* RxSwiftWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE83329E7B0AD002635BB /* RxSwiftWebSocket */; };
+		871FE83629E7B0AD002635BB /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE83529E7B0AD002635BB /* Json */; };
+		871FE83829E7B0AD002635BB /* Transform in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE83729E7B0AD002635BB /* Transform */; };
+		871FE84529E7BC87002635BB /* DependencyValues+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871FE84429E7BC87002635BB /* DependencyValues+.swift */; };
+		871FE84829E7BCBA002635BB /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE84729E7BCBA002635BB /* Dependencies */; };
+		872172B329C2B28700650C0E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 872172B229C2B28700650C0E /* Realm */; };
+		872172B529C2B28700650C0E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 872172B429C2B28700650C0E /* RealmSwift */; };
 		874912BD27ACB49700168364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874912AB27ACB49700168364 /* Assets.xcassets */; };
 		874912BE27ACB49700168364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874912AB27ACB49700168364 /* Assets.xcassets */; };
 		8749139927ACB68A00168364 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749137B27ACB68A00168364 /* MainReducer.swift */; };
@@ -55,14 +64,9 @@
 		874913C427ACB68B00168364 /* RootMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749139427ACB68A00168364 /* RootMiddleware.swift */; };
 		874913C527ACB68B00168364 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749139527ACB68A00168364 /* TodoApp.swift */; };
 		874913C627ACB68B00168364 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749139527ACB68A00168364 /* TodoApp.swift */; };
-		874913C727ACB68B00168364 /* Store+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749139727ACB68A00168364 /* Store+.swift */; };
-		874913C827ACB68B00168364 /* Store+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749139727ACB68A00168364 /* Store+.swift */; };
 		874913C927ACB68B00168364 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749139827ACB68A00168364 /* ViewStore.swift */; };
 		874913CA27ACB68B00168364 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749139827ACB68A00168364 /* ViewStore.swift */; };
 		87E2E6F227ACBE0800AC3214 /* RxSwiftRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E6F127ACBE0800AC3214 /* RxSwiftRex */; };
-		87E2E6F527ACBE3800AC3214 /* RxSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E6F427ACBE3800AC3214 /* RxSwiftRequest */; };
-		87E2E6F827ACBE4800AC3214 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E6F727ACBE4800AC3214 /* Json */; };
-		87E2E6FB27ACBE6500AC3214 /* ConvertSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E6FA27ACBE6500AC3214 /* ConvertSwift */; };
 		87E2E6FE27ACC05300AC3214 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E6FD27ACC05300AC3214 /* RxRelay */; };
 		87E2E71927ACD9AD00AC3214 /* RxSwiftRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E71827ACD9AD00AC3214 /* RxSwiftRex */; };
 		87E2E71B27ACD9BD00AC3214 /* RxSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E71A27ACD9BD00AC3214 /* RxSwiftRequest */; };
@@ -72,6 +76,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		871FE84429E7BC87002635BB /* DependencyValues+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyValues+.swift"; sourceTree = "<group>"; };
 		874912AB27ACB49700168364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874912B027ACB49700168364 /* RxSwift+Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift+Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		874912B627ACB49700168364 /* RxSwift+Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift+Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +104,6 @@
 		8749139327ACB68A00168364 /* RootReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
 		8749139427ACB68A00168364 /* RootMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMiddleware.swift; sourceTree = "<group>"; };
 		8749139527ACB68A00168364 /* TodoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
-		8749139727ACB68A00168364 /* Store+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+.swift"; sourceTree = "<group>"; };
 		8749139827ACB68A00168364 /* ViewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,11 +112,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872172B329C2B28700650C0E /* Realm in Frameworks */,
+				871FE83229E7B0AD002635BB /* RxSwiftSocketIO in Frameworks */,
 				87E2E6FE27ACC05300AC3214 /* RxRelay in Frameworks */,
-				87E2E6F527ACBE3800AC3214 /* RxSwiftRequest in Frameworks */,
+				871FE83029E7B0AD002635BB /* RxSwiftRequest in Frameworks */,
+				872172B529C2B28700650C0E /* RealmSwift in Frameworks */,
+				871FE84829E7BCBA002635BB /* Dependencies in Frameworks */,
 				87E2E6F227ACBE0800AC3214 /* RxSwiftRex in Frameworks */,
-				87E2E6FB27ACBE6500AC3214 /* ConvertSwift in Frameworks */,
-				87E2E6F827ACBE4800AC3214 /* Json in Frameworks */,
+				871FE83829E7B0AD002635BB /* Transform in Frameworks */,
+				871FE83629E7B0AD002635BB /* Json in Frameworks */,
+				871FE83429E7B0AD002635BB /* RxSwiftWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		871FE84329E7BC77002635BB /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				871FE84429E7BC87002635BB /* DependencyValues+.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		874912A327ACB49600168364 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +187,7 @@
 		8749137927ACB68A00168364 /* CoreApp */ = {
 			isa = PBXGroup;
 			children = (
+				871FE84329E7BC77002635BB /* Dependencies */,
 				8749138127ACB68A00168364 /* Models */,
 				8749139627ACB68A00168364 /* Redux+ */,
 				874913CD27ACB6F200168364 /* AppScreens */,
@@ -238,7 +256,6 @@
 			isa = PBXGroup;
 			children = (
 				8749138027ACB68A00168364 /* CoreApp.swift */,
-				8749139727ACB68A00168364 /* Store+.swift */,
 				8749139827ACB68A00168364 /* ViewStore.swift */,
 			);
 			path = "Redux+";
@@ -280,10 +297,15 @@
 			name = "RxSwift+Redux (iOS)";
 			packageProductDependencies = (
 				87E2E6F127ACBE0800AC3214 /* RxSwiftRex */,
-				87E2E6F427ACBE3800AC3214 /* RxSwiftRequest */,
-				87E2E6F727ACBE4800AC3214 /* Json */,
-				87E2E6FA27ACBE6500AC3214 /* ConvertSwift */,
 				87E2E6FD27ACC05300AC3214 /* RxRelay */,
+				872172B229C2B28700650C0E /* Realm */,
+				872172B429C2B28700650C0E /* RealmSwift */,
+				871FE82F29E7B0AD002635BB /* RxSwiftRequest */,
+				871FE83129E7B0AD002635BB /* RxSwiftSocketIO */,
+				871FE83329E7B0AD002635BB /* RxSwiftWebSocket */,
+				871FE83529E7B0AD002635BB /* Json */,
+				871FE83729E7B0AD002635BB /* Transform */,
+				871FE84729E7BCBA002635BB /* Dependencies */,
 			);
 			productName = "RxSwift+Redux (iOS)";
 			productReference = 874912B027ACB49700168364 /* RxSwift+Redux.app */;
@@ -321,7 +343,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					874912AF27ACB49700168364 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -346,6 +368,8 @@
 				87E2E6F627ACBE4800AC3214 /* XCRemoteSwiftPackageReference "Json" */,
 				87E2E6F927ACBE6500AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */,
 				87E2E6FC27ACC05300AC3214 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				872172B129C2B28700650C0E /* XCRemoteSwiftPackageReference "realm-swift" */,
+				871FE84629E7BCBA002635BB /* XCRemoteSwiftPackageReference "swift-dependencies" */,
 			);
 			productRefGroup = 874912B127ACB49700168364 /* Products */;
 			projectDirPath = "";
@@ -382,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				874913A927ACB68B00168364 /* CounterState.swift in Sources */,
+				871FE84529E7BC87002635BB /* DependencyValues+.swift in Sources */,
 				8749139D27ACB68A00168364 /* MainMiddleware.swift in Sources */,
 				874913A727ACB68B00168364 /* CounterReducer.swift in Sources */,
 				874913C327ACB68B00168364 /* RootMiddleware.swift in Sources */,
@@ -405,7 +430,6 @@
 				874913AB27ACB68B00168364 /* CounterView.swift in Sources */,
 				874913C927ACB68B00168364 /* ViewStore.swift in Sources */,
 				874913B327ACB68B00168364 /* AuthState.swift in Sources */,
-				874913C727ACB68B00168364 /* Store+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +461,6 @@
 				874913AC27ACB68B00168364 /* CounterView.swift in Sources */,
 				874913CA27ACB68B00168364 /* ViewStore.swift in Sources */,
 				874913B427ACB68B00168364 /* AuthState.swift in Sources */,
-				874913C827ACB68B00168364 /* Store+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +501,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -539,6 +563,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -626,9 +651,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2H5PN3F9B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -654,9 +681,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2H5PN3F9B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -709,6 +738,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		871FE84629E7BCBA002635BB /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.2.0;
+			};
+		};
+		872172B129C2B28700650C0E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.37.0;
+			};
+		};
 		87E2E6F027ACBE0800AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftRex/SwiftRex.git";
@@ -721,24 +766,24 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/Networking";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		87E2E6F627ACBE4800AC3214 /* XCRemoteSwiftPackageReference "Json" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/Json";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		87E2E6F927ACBE6500AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/SwiftExtension";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		87E2E6FC27ACC05300AC3214 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
@@ -752,25 +797,50 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		87E2E6F127ACBE0800AC3214 /* RxSwiftRex */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E6F027ACBE0800AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;
-			productName = RxSwiftRex;
-		};
-		87E2E6F427ACBE3800AC3214 /* RxSwiftRequest */ = {
+		871FE82F29E7B0AD002635BB /* RxSwiftRequest */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E6F327ACBE3800AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
 			productName = RxSwiftRequest;
 		};
-		87E2E6F727ACBE4800AC3214 /* Json */ = {
+		871FE83129E7B0AD002635BB /* RxSwiftSocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E6F327ACBE3800AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = RxSwiftSocketIO;
+		};
+		871FE83329E7B0AD002635BB /* RxSwiftWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E6F327ACBE3800AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = RxSwiftWebSocket;
+		};
+		871FE83529E7B0AD002635BB /* Json */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E6F627ACBE4800AC3214 /* XCRemoteSwiftPackageReference "Json" */;
 			productName = Json;
 		};
-		87E2E6FA27ACBE6500AC3214 /* ConvertSwift */ = {
+		871FE83729E7B0AD002635BB /* Transform */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E6F927ACBE6500AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */;
-			productName = ConvertSwift;
+			productName = Transform;
+		};
+		871FE84729E7BCBA002635BB /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 871FE84629E7BCBA002635BB /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		872172B229C2B28700650C0E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 872172B129C2B28700650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		872172B429C2B28700650C0E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 872172B129C2B28700650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		87E2E6F127ACBE0800AC3214 /* RxSwiftRex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87E2E6F027ACBE0800AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;
+			productName = RxSwiftRex;
 		};
 		87E2E6FD27ACC05300AC3214 /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;

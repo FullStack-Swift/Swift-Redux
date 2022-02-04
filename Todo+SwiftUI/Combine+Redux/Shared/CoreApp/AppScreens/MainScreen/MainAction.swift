@@ -1,9 +1,9 @@
 import Foundation
 
 enum MainAction: Equatable {
-    /// subview Action
+  /// subview Action
   case counterAction(CounterAction)
-    /// view Action
+  /// view Action
   case viewOnAppear
   case viewOnDisappear
   case none
@@ -11,9 +11,9 @@ enum MainAction: Equatable {
   case logout
   case changeRootScreen(RootScreen)
   case viewCreateTodo
-    /// binding
+  /// binding
   case changeText(String)
-    /// network Action
+  /// network Action
   case getTodo
   case responseTodo(Data)
   case createOrUpdateTodo(TodoModel)

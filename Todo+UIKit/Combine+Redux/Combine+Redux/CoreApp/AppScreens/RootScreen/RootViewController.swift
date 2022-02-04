@@ -12,8 +12,8 @@ final class RootViewController: BaseViewController {
   init(store: ReduxStoreBase<RootAction, RootState>? = nil) {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: RootState()),
-      reducer: rootReducer,
-      middleware: rootMiddleware
+      reducer: RootReducer,
+      middleware: RootMiddleware()
     )
     self.store = unwrapStore
     self.viewStore = unwrapStore.asViewStore(initialState: RootState())
@@ -39,18 +39,18 @@ final class RootViewController: BaseViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     viewStore.send(.viewDidLoad)
-      //bind view to viewstore
+    //bind view to viewstore
     viewStore.publisher.rootScreen.sink { [weak self] screen in
       guard let self = self else {return}
       switch screen {
-      case .main:
-        let vc = MainViewController(store: self.store.projection(action: RootAction.mainAction, state: {$0.mainState}))
-        let nav = UINavigationController(rootViewController: vc)
-        self.viewController = nav
-      case .auth:
-        let vc = AuthViewController(store: self.store.projection(action: RootAction.authAction, state: {$0.authState}))
-        let nav = UINavigationController(rootViewController: vc)
-        self.viewController = nav
+        case .main:
+          let vc = MainViewController(store: self.store.projection(action: RootAction.mainAction, state: {$0.mainState}))
+          let nav = UINavigationController(rootViewController: vc)
+          self.viewController = nav
+        case .auth:
+          let vc = AuthViewController(store: self.store.projection(action: RootAction.authAction, state: {$0.authState}))
+          let nav = UINavigationController(rootViewController: vc)
+          self.viewController = nav
       }
     }
     .store(in: &cancellables)

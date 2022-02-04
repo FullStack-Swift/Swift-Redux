@@ -12,7 +12,7 @@ struct AuthView: View {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .rx(initialValue: AuthState()),
       reducer: AuthReducer,
-      middleware: IdentityMiddleware<AuthAction, AuthAction, AuthState>()
+      middleware: AuthMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore

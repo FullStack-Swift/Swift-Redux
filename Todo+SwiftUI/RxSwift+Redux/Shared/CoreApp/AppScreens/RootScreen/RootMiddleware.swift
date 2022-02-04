@@ -12,7 +12,7 @@ class RootMiddleware: MiddlewareProtocol {
   typealias StateType = RootState
   
   func handle(action: InputActionType, from dispatcher: ActionSource, state: @escaping GetState<StateType>) -> IO<OutputActionType> {
-    let sut = IO<OutputActionType> { output in
+    let io = IO<OutputActionType> { output in
       switch action {
       case .mainAction(let mainAction):
         switch mainAction {
@@ -32,6 +32,6 @@ class RootMiddleware: MiddlewareProtocol {
         break
       }
     }
-    return sut
+    return io
   }
 }

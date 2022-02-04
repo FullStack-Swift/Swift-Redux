@@ -7,6 +7,6 @@ struct RootState: Equatable {
 }
 
 enum RootScreen: Equatable {
-    case main
-    case auth
+  case main
+  case auth
 }

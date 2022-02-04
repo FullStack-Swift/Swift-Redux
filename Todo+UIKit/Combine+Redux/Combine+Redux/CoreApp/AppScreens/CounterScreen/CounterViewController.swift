@@ -13,7 +13,7 @@ final class CounterViewController: BaseViewController {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: CounterState()),
       reducer: CounterReducer,
-      middleware: IdentityMiddleware<CounterAction, CounterAction, CounterState>()
+      middleware: CounterMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore
@@ -28,19 +28,19 @@ final class CounterViewController: BaseViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     viewStore.send(.viewDidLoad)
-      // setup view
+    // setup view
     self.view.backgroundColor = .systemBackground
-      /// decrementButton
+    /// decrementButton
     let decrementButton = UIButton(type: .system)
     decrementButton.setTitle("−", for: .normal)
-      /// countLabel
+    /// countLabel
     let countLabel = UILabel()
     countLabel.font = .monospacedDigitSystemFont(ofSize: 17, weight: .regular)
-      /// incrementButton
+    /// incrementButton
     let incrementButton = UIButton(type: .system)
     incrementButton.setTitle("+", for: .normal)
     
-      /// containerView
+    /// containerView
     let rootStackView = UIStackView(arrangedSubviews: [
       decrementButton,
       countLabel,
@@ -53,7 +53,7 @@ final class CounterViewController: BaseViewController {
       rootStackView.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor),
     ])
     
-      //bind view to viewstore
+    //bind view to viewstore
     decrementButton.tapPublisher
       .map { CounterAction.increment }
       .subscribe(viewStore.action)
@@ -64,7 +64,7 @@ final class CounterViewController: BaseViewController {
       .subscribe(viewStore.action)
       .store(in: &self.cancellables)
     
-      //bind viewstore to view
+    //bind viewstore to view
     self.viewStore.publisher
       .map { $0.count.toString() }
       .assign(to: \.text, on: countLabel)

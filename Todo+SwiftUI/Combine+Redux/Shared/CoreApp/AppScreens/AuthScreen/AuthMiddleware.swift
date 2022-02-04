@@ -1,6 +1,4 @@
 import Foundation
-import SwiftRex
-import Combine
 
 class AuthMiddleware: MiddlewareProtocol {
   typealias InputActionType = AuthAction
@@ -10,14 +8,16 @@ class AuthMiddleware: MiddlewareProtocol {
   typealias StateType = AuthState
   
   func handle(action: InputActionType, from dispatcher: ActionSource, state: @escaping GetState<StateType>) -> IO<OutputActionType> {
-    let sut = IO<OutputActionType> { output in
+    let io = IO<OutputActionType> { output in
+      let state = state()
+      print(state)
       switch action {
-      case .login:
+      case .requestLogin:
         output.dispatch(.changeRootScreen(.main))
       default:
         break
       }
     }
-    return sut
+    return io
   }
 }

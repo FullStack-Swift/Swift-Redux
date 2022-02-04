@@ -289,6 +289,15 @@ extension ViewStore where State == Void {
     self.init(initialState: initialState, store: store, emitsValue: .never)
   }
 }
+
+extension StoreType where StateType: Equatable {
+  public func asViewStore(
+    initialState: StateType
+  ) -> ViewStore<ActionType, StateType> {
+    .init(initialState: initialState, store: self, emitsValue: .whenDifferent)
+  }
+}
+
   /// A publisher of store state.
 @dynamicMemberLookup
 public struct StorePublisher<State>: ObservableType {

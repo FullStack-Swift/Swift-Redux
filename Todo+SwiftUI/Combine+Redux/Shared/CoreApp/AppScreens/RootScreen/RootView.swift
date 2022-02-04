@@ -1,20 +1,19 @@
 import SwiftUI
-import SwiftRex
-import CombineRex
 
 struct RootView: View {
   
-  private let store: ReduxStoreBase<RootAction, RootState>
-  
+  private let store: AnyStoreType<RootAction, RootState>
+
   @ObservedObject
   private var viewStore: ViewStore<RootAction, RootState>
-  
-  init(store: ReduxStoreBase<RootAction, RootState>? = nil) {
+
+  init(store: StoreProjection<RootAction, RootState>? = nil) {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: RootState()),
-      reducer: rootReducer,
-      middleware: rootMiddleware
+      reducer: RootReducer,
+      middleware: RootMiddleware()
     )
+      .eraseToAnyStoreType()
     self.store = unwrapStore
     self.viewStore = unwrapStore.asViewStore(initialState: RootState())
   }
@@ -22,10 +21,10 @@ struct RootView: View {
   var body: some View {
     ZStack {
       switch viewStore.state.rootScreen {
-      case .main:
-        MainView(store: store.projection(action: RootAction.mainAction, state: {$0.mainState}))
-      case .auth:
-        AuthView(store: store.projection(action: RootAction.authAction, state: {$0.authState}))
+        case .main:
+          MainView(store: store.projection(action: RootAction.mainAction, state: {$0.mainState}))
+        case .auth:
+          AuthView(store: store.projection(action: RootAction.authAction, state: {$0.authState}))
       }
     }
     .onAppear {

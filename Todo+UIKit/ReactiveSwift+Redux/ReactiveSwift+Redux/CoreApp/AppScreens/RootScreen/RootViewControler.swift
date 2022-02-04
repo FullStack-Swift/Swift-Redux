@@ -5,7 +5,7 @@ import ReactiveSwift
 import ReactiveCocoa
 
 final class RootViewController: BaseViewController {
-
+  
   private let store: ReduxStoreBase<RootAction, RootState>
   
   private var viewStore: ViewStore<RootAction, RootState>
@@ -40,18 +40,18 @@ final class RootViewController: BaseViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     viewStore.send(.viewDidLoad)
-      //bind view to viewstore
+    //bind view to viewstore
     disposables += viewStore.publisher.rootScreen.producer.startWithValues { [weak self] screen in
       guard let self = self else {return}
       switch screen {
-      case .main:
-        let vc = MainViewController(store: self.store.projection(action: RootAction.mainAction, state: {$0.mainState}))
-        let nav = UINavigationController(rootViewController: vc)
-        self.viewController = nav
-      case .auth:
-        let vc = AuthViewController(store: self.store.projection(action: RootAction.authAction, state: {$0.authState}))
-        let nav = UINavigationController(rootViewController: vc)
-        self.viewController = nav
+        case .main:
+          let vc = MainViewController(store: self.store.projection(action: RootAction.mainAction, state: {$0.mainState}))
+          let nav = UINavigationController(rootViewController: vc)
+          self.viewController = nav
+        case .auth:
+          let vc = AuthViewController(store: self.store.projection(action: RootAction.authAction, state: {$0.authState}))
+          let nav = UINavigationController(rootViewController: vc)
+          self.viewController = nav
       }
     }
   }

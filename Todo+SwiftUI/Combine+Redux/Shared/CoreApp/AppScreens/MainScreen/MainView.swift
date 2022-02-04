@@ -1,5 +1,4 @@
 import SwiftUI
-import CombineRex
 
 struct MainView: View {
   
@@ -12,7 +11,7 @@ struct MainView: View {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: MainState()),
       reducer: MainReducer,
-      middleware: IdentityMiddleware<MainAction, MainAction, MainState>()
+      middleware: MainMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore
@@ -59,7 +58,7 @@ struct MainView: View {
 
 
 extension MainView {
-    /// create content view in screen
+  /// create content view in screen
   private var content: some View {
     List {
       Section {
@@ -89,7 +88,7 @@ extension MainView {
             .bold()
             .foregroundColor(viewStore.title.isEmpty ? Color.gray : Color.green)
         })
-          .disabled(viewStore.title.isEmpty)
+        .disabled(viewStore.title.isEmpty)
       }
       
       ForEach(viewStore.todos) { todo in

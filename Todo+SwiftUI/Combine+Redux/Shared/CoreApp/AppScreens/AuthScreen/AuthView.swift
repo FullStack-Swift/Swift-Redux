@@ -1,5 +1,4 @@
 import SwiftUI
-import CombineRex
 
 struct AuthView: View {
   
@@ -12,7 +11,7 @@ struct AuthView: View {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: AuthState()),
       reducer: AuthReducer,
-      middleware: IdentityMiddleware<AuthAction, AuthAction, AuthState>()
+      middleware: AuthMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore
@@ -22,7 +21,7 @@ struct AuthView: View {
   var body: some View {
     ZStack {
       Button("Login") {
-        viewStore.send(.login)
+        viewStore.send(.requestLogin)
       }
     }
     .onAppear {

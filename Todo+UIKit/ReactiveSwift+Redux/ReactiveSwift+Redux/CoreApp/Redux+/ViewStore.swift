@@ -155,7 +155,9 @@ open class ViewStore<Action, State>: ObservableObject {
     ///
     /// - Parameter action: An action.
   public func send(_ action: Action) {
-    self._send(action)
+    DispatchQueue.main.async {
+      self._send(action)
+    }
   }
   
     /// Derives a binding from the store that prevents direct writes to state and instead sends
@@ -311,6 +313,14 @@ extension ViewStore where State == Void {
   }
 }
 
+extension StoreType where StateType: Equatable {
+  public func asViewStore(
+    initialState: StateType
+  ) -> ViewStore<ActionType, StateType> {
+    .init(initialState: initialState, store: self, emitsValue: .whenDifferent)
+  }
+}
+
   /// A publisher of store state.
 @dynamicMemberLookup
 public struct StorePublisher<State>: SignalProducerConvertible {
@@ -327,8 +337,8 @@ public struct StorePublisher<State>: SignalProducerConvertible {
   
   fileprivate init<Action>(viewStore: ViewStore<Action, State>) {
     self.viewStore = viewStore
-//    self.upstream = viewStore.$_state.producer
-    self.upstream = Property<State>(initial: viewStore.state, then: viewStore.$_state).producer
+    self.upstream = viewStore.$_state.producer
+//    self.upstream = Property<State>(initial: viewStore.state, then: viewStore.$_state).producer
   }
   
   private init(upstream: SignalProducer<State, Never>,viewStore: Any) {

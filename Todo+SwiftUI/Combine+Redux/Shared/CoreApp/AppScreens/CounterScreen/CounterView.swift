@@ -1,7 +1,4 @@
 import SwiftUI
-import CombineRex
-import SwiftRex
-import ConvertSwift
 
 struct CounterView: View {
   
@@ -14,7 +11,7 @@ struct CounterView: View {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: CounterState()),
       reducer: CounterReducer,
-      middleware: IdentityMiddleware<CounterAction, CounterAction, CounterState>()
+      middleware: CounterMiddleware()
     )
       .eraseToAnyStoreType()
     self.store = unwrapStore
@@ -29,7 +26,7 @@ struct CounterView: View {
         } label: {
           Text("+")
         }
-        Text(viewStore.count.toString())
+        Text("\(viewStore.count)")
         Button {
           viewStore.send(.decrement)
         } label: {

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		871FE81C29E6BE4D002635BB /* CombineRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE81B29E6BE4D002635BB /* CombineRequest */; };
+		871FE81E29E6BE4D002635BB /* CombineSocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE81D29E6BE4D002635BB /* CombineSocketIO */; };
+		871FE82029E6BE4D002635BB /* CombineWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE81F29E6BE4D002635BB /* CombineWebSocket */; };
+		871FE82229E6BE4D002635BB /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE82129E6BE4D002635BB /* Json */; };
+		871FE82429E6BE4D002635BB /* Transform in Frameworks */ = {isa = PBXBuildFile; productRef = 871FE82329E6BE4D002635BB /* Transform */; };
+		8721729629C2ABF600650C0E /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8721729529C2ABF600650C0E /* ViewStore.swift */; };
+		8721729729C2ABF600650C0E /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8721729529C2ABF600650C0E /* ViewStore.swift */; };
+		872172AE29C2B26800650C0E /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 872172AD29C2B26800650C0E /* Realm */; };
+		872172B029C2B26800650C0E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 872172AF29C2B26800650C0E /* RealmSwift */; };
 		8749127527ACB46A00168364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8749126327ACB46A00168364 /* Assets.xcassets */; };
 		8749127627ACB46A00168364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8749126327ACB46A00168364 /* Assets.xcassets */; };
 		874912E727ACB50200168364 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874912C927ACB50200168364 /* MainReducer.swift */; };
@@ -55,21 +64,18 @@
 		8749131227ACB50200168364 /* RootMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874912E227ACB50200168364 /* RootMiddleware.swift */; };
 		8749131327ACB50200168364 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874912E327ACB50200168364 /* TodoApp.swift */; };
 		8749131427ACB50200168364 /* TodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874912E327ACB50200168364 /* TodoApp.swift */; };
-		8749131527ACB50200168364 /* Store+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874912E527ACB50200168364 /* Store+.swift */; };
-		8749131627ACB50200168364 /* Store+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874912E527ACB50200168364 /* Store+.swift */; };
-		8749131727ACB50200168364 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874912E627ACB50200168364 /* ViewStore.swift */; };
-		8749131827ACB50200168364 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874912E627ACB50200168364 /* ViewStore.swift */; };
 		8749131B27ACB54200168364 /* CombineRex in Frameworks */ = {isa = PBXBuildFile; productRef = 8749131A27ACB54200168364 /* CombineRex */; };
-		8749132027ACB56700168364 /* CombineRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 8749131F27ACB56700168364 /* CombineRequest */; };
-		8749132327ACB57B00168364 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 8749132227ACB57B00168364 /* Json */; };
-		8749132627ACB59800168364 /* ConvertSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8749132527ACB59800168364 /* ConvertSwift */; };
 		874913D027ACB74400168364 /* CombineRex in Frameworks */ = {isa = PBXBuildFile; productRef = 874913CF27ACB74400168364 /* CombineRex */; };
 		874913D227ACB74400168364 /* CombineRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 874913D127ACB74400168364 /* CombineRequest */; };
 		874913D427ACB74400168364 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 874913D327ACB74400168364 /* Json */; };
 		874913D627ACB74400168364 /* ConvertSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 874913D527ACB74400168364 /* ConvertSwift */; };
+		876609D729C2D6B60057667D /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 876609D629C2D6B60057667D /* Dependencies */; };
+		876609DA29C2D6ED0057667D /* DependencyValues+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876609D929C2D6ED0057667D /* DependencyValues+.swift */; };
+		876609DB29C2D6F10057667D /* DependencyValues+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876609D929C2D6ED0057667D /* DependencyValues+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8721729529C2ABF600650C0E /* ViewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 		8749126327ACB46A00168364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8749126827ACB46A00168364 /* Combine+Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Combine+Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8749126E27ACB46A00168364 /* Combine+Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Combine+Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,8 +103,7 @@
 		874912E127ACB50200168364 /* RootReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootReducer.swift; sourceTree = "<group>"; };
 		874912E227ACB50200168364 /* RootMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMiddleware.swift; sourceTree = "<group>"; };
 		874912E327ACB50200168364 /* TodoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
-		874912E527ACB50200168364 /* Store+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+.swift"; sourceTree = "<group>"; };
-		874912E627ACB50200168364 /* ViewStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
+		876609D929C2D6ED0057667D /* DependencyValues+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyValues+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +111,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8749132027ACB56700168364 /* CombineRequest in Frameworks */,
-				8749132627ACB59800168364 /* ConvertSwift in Frameworks */,
-				8749132327ACB57B00168364 /* Json in Frameworks */,
+				872172B029C2B26800650C0E /* RealmSwift in Frameworks */,
+				876609D729C2D6B60057667D /* Dependencies in Frameworks */,
+				871FE81C29E6BE4D002635BB /* CombineRequest in Frameworks */,
+				871FE82029E6BE4D002635BB /* CombineWebSocket in Frameworks */,
 				8749131B27ACB54200168364 /* CombineRex in Frameworks */,
+				872172AE29C2B26800650C0E /* Realm in Frameworks */,
+				871FE82429E6BE4D002635BB /* Transform in Frameworks */,
+				871FE82229E6BE4D002635BB /* Json in Frameworks */,
+				871FE81E29E6BE4D002635BB /* CombineSocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +176,7 @@
 		874912C727ACB50200168364 /* CoreApp */ = {
 			isa = PBXGroup;
 			children = (
+				876609D829C2D6D50057667D /* Dependencies */,
 				874912CF27ACB50200168364 /* Models */,
 				874912E427ACB50200168364 /* Redux+ */,
 				874913CB27ACB6B500168364 /* AppScreens */,
@@ -234,8 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				874912CE27ACB50200168364 /* CoreApp.swift */,
-				874912E527ACB50200168364 /* Store+.swift */,
-				874912E627ACB50200168364 /* ViewStore.swift */,
+				8721729529C2ABF600650C0E /* ViewStore.swift */,
 			);
 			path = "Redux+";
 			sourceTree = "<group>";
@@ -258,6 +268,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		876609D829C2D6D50057667D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				876609D929C2D6ED0057667D /* DependencyValues+.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,9 +294,14 @@
 			name = "Combine+Redux (iOS)";
 			packageProductDependencies = (
 				8749131A27ACB54200168364 /* CombineRex */,
-				8749131F27ACB56700168364 /* CombineRequest */,
-				8749132227ACB57B00168364 /* Json */,
-				8749132527ACB59800168364 /* ConvertSwift */,
+				872172AD29C2B26800650C0E /* Realm */,
+				872172AF29C2B26800650C0E /* RealmSwift */,
+				876609D629C2D6B60057667D /* Dependencies */,
+				871FE81B29E6BE4D002635BB /* CombineRequest */,
+				871FE81D29E6BE4D002635BB /* CombineSocketIO */,
+				871FE81F29E6BE4D002635BB /* CombineWebSocket */,
+				871FE82129E6BE4D002635BB /* Json */,
+				871FE82329E6BE4D002635BB /* Transform */,
 			);
 			productName = "Combine+Redux (iOS)";
 			productReference = 8749126827ACB46A00168364 /* Combine+Redux.app */;
@@ -315,7 +338,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					8749126727ACB46A00168364 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -339,6 +362,8 @@
 				8749131E27ACB56600168364 /* XCRemoteSwiftPackageReference "Networking" */,
 				8749132127ACB57B00168364 /* XCRemoteSwiftPackageReference "Json" */,
 				8749132427ACB59800168364 /* XCRemoteSwiftPackageReference "SwiftExtension" */,
+				872172AC29C2B26800650C0E /* XCRemoteSwiftPackageReference "realm-swift" */,
+				876609D529C2D6B60057667D /* XCRemoteSwiftPackageReference "swift-dependencies" */,
 			);
 			productRefGroup = 8749126927ACB46A00168364 /* Products */;
 			projectDirPath = "";
@@ -376,22 +401,22 @@
 			files = (
 				874912FB27ACB50200168364 /* CounterAction.swift in Sources */,
 				8749130F27ACB50200168364 /* RootReducer.swift in Sources */,
+				8721729629C2ABF600650C0E /* ViewStore.swift in Sources */,
 				874912F327ACB50200168364 /* TodoModel.swift in Sources */,
 				874912F527ACB50200168364 /* CounterReducer.swift in Sources */,
 				874912F727ACB50200168364 /* CounterState.swift in Sources */,
 				874912FF27ACB50200168364 /* AuthMiddleware.swift in Sources */,
 				8749130D27ACB50200168364 /* RootState.swift in Sources */,
 				874912EB27ACB50200168364 /* MainMiddleware.swift in Sources */,
+				876609DA29C2D6ED0057667D /* DependencyValues+.swift in Sources */,
 				874912ED27ACB50200168364 /* MainView.swift in Sources */,
 				874912F127ACB50200168364 /* CoreApp.swift in Sources */,
 				874912EF27ACB50200168364 /* MainAction.swift in Sources */,
-				8749131727ACB50200168364 /* ViewStore.swift in Sources */,
 				8749131327ACB50200168364 /* TodoApp.swift in Sources */,
 				874912FD27ACB50200168364 /* CounterMiddleware.swift in Sources */,
 				874912E927ACB50200168364 /* MainState.swift in Sources */,
 				8749130B27ACB50200168364 /* RootView.swift in Sources */,
 				8749130527ACB50200168364 /* AuthReducer.swift in Sources */,
-				8749131527ACB50200168364 /* Store+.swift in Sources */,
 				8749130927ACB50200168364 /* RootAction.swift in Sources */,
 				8749131127ACB50200168364 /* RootMiddleware.swift in Sources */,
 				874912E727ACB50200168364 /* MainReducer.swift in Sources */,
@@ -408,22 +433,22 @@
 			files = (
 				874912FC27ACB50200168364 /* CounterAction.swift in Sources */,
 				8749131027ACB50200168364 /* RootReducer.swift in Sources */,
+				8721729729C2ABF600650C0E /* ViewStore.swift in Sources */,
 				874912F427ACB50200168364 /* TodoModel.swift in Sources */,
 				874912F627ACB50200168364 /* CounterReducer.swift in Sources */,
 				874912F827ACB50200168364 /* CounterState.swift in Sources */,
 				8749130027ACB50200168364 /* AuthMiddleware.swift in Sources */,
 				8749130E27ACB50200168364 /* RootState.swift in Sources */,
 				874912EC27ACB50200168364 /* MainMiddleware.swift in Sources */,
+				876609DB29C2D6F10057667D /* DependencyValues+.swift in Sources */,
 				874912EE27ACB50200168364 /* MainView.swift in Sources */,
 				874912F227ACB50200168364 /* CoreApp.swift in Sources */,
 				874912F027ACB50200168364 /* MainAction.swift in Sources */,
-				8749131827ACB50200168364 /* ViewStore.swift in Sources */,
 				8749131427ACB50200168364 /* TodoApp.swift in Sources */,
 				874912FE27ACB50200168364 /* CounterMiddleware.swift in Sources */,
 				874912EA27ACB50200168364 /* MainState.swift in Sources */,
 				8749130C27ACB50200168364 /* RootView.swift in Sources */,
 				8749130627ACB50200168364 /* AuthReducer.swift in Sources */,
-				8749131627ACB50200168364 /* Store+.swift in Sources */,
 				8749130A27ACB50200168364 /* RootAction.swift in Sources */,
 				8749131227ACB50200168364 /* RootMiddleware.swift in Sources */,
 				874912E827ACB50200168364 /* MainReducer.swift in Sources */,
@@ -471,6 +496,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -532,6 +558,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -619,9 +646,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2H5PN3F9B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -647,9 +676,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 2H5PN3F9B6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -702,6 +733,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		872172AC29C2B26800650C0E /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.37.0;
+			};
+		};
 		8749131927ACB54200168364 /* XCRemoteSwiftPackageReference "SwiftRex" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftRex/SwiftRex.git";
@@ -714,48 +753,76 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/Networking";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		8749132127ACB57B00168364 /* XCRemoteSwiftPackageReference "Json" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/Json";
 			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 		8749132427ACB59800168364 /* XCRemoteSwiftPackageReference "SwiftExtension" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/FullStack-Swift/SwiftExtension";
 			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		876609D529C2D6B60057667D /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies";
+			requirement = {
 				kind = exactVersion;
-				version = 1.0.0;
+				version = 0.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8749131A27ACB54200168364 /* CombineRex */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8749131927ACB54200168364 /* XCRemoteSwiftPackageReference "SwiftRex" */;
-			productName = CombineRex;
-		};
-		8749131F27ACB56700168364 /* CombineRequest */ = {
+		871FE81B29E6BE4D002635BB /* CombineRequest */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8749131E27ACB56600168364 /* XCRemoteSwiftPackageReference "Networking" */;
 			productName = CombineRequest;
 		};
-		8749132227ACB57B00168364 /* Json */ = {
+		871FE81D29E6BE4D002635BB /* CombineSocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8749131E27ACB56600168364 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = CombineSocketIO;
+		};
+		871FE81F29E6BE4D002635BB /* CombineWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8749131E27ACB56600168364 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = CombineWebSocket;
+		};
+		871FE82129E6BE4D002635BB /* Json */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8749132127ACB57B00168364 /* XCRemoteSwiftPackageReference "Json" */;
 			productName = Json;
 		};
-		8749132527ACB59800168364 /* ConvertSwift */ = {
+		871FE82329E6BE4D002635BB /* Transform */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8749132427ACB59800168364 /* XCRemoteSwiftPackageReference "SwiftExtension" */;
-			productName = ConvertSwift;
+			productName = Transform;
+		};
+		872172AD29C2B26800650C0E /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 872172AC29C2B26800650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		872172AF29C2B26800650C0E /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 872172AC29C2B26800650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		8749131A27ACB54200168364 /* CombineRex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8749131927ACB54200168364 /* XCRemoteSwiftPackageReference "SwiftRex" */;
+			productName = CombineRex;
 		};
 		874913CF27ACB74400168364 /* CombineRex */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -776,6 +843,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8749132427ACB59800168364 /* XCRemoteSwiftPackageReference "SwiftExtension" */;
 			productName = ConvertSwift;
+		};
+		876609D629C2D6B60057667D /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 876609D529C2D6B60057667D /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
