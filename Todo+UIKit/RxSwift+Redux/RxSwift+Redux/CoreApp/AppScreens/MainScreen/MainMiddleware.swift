@@ -35,6 +35,7 @@ class MainMiddleware: MiddlewareProtocol {
         let title = state.title
         let id = UUID()
         let todo = TodoModel(id: id, title: title, isCompleted: false)
+        output.dispatch(.resetText)
         output.dispatch(.createOrUpdateTodo(todo))
           /// networking
       case .getTodo:
@@ -96,9 +97,9 @@ let MainEffectMiddleware: SimpleEffectMiddleware<MainAction, MainState> = Simple
     let title = state.title
     let id = UUID()
     let todo = TodoModel(id: id, title: title, isCompleted: false)
-    let publisher = Observable.just(MainAction.createOrUpdateTodo(todo))
-    return publisher
-      .asEffect()
+    let resetTextPublisher = Observable.just(MainAction.resetText)
+    let createOrUpdateTodoPublisher = Observable.just(MainAction.createOrUpdateTodo(todo))
+    return Observable.merge(resetTextPublisher, createOrUpdateTodoPublisher).asEffect()
       /// networking
   case .getTodo:
     let request = MRequest {

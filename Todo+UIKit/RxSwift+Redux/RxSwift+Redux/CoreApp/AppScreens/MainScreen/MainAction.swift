@@ -14,6 +14,8 @@ enum MainAction: Equatable {
   case viewCreateTodo
     /// binding
   case changeText(String)
+    // MARK: - Store Action
+  case resetText
     /// network Action
   case getTodo
   case responseTodo(Data)

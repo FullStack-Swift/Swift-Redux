@@ -5,6 +5,7 @@ import Json
 import ReactiveSwift
 import ReactiveSwiftRex
 import ReactiveSwiftRequest
+import RxSwift
 
 class MainMiddleware: MiddlewareProtocol {
   
@@ -35,6 +36,7 @@ class MainMiddleware: MiddlewareProtocol {
         let title = state.title
         let id = UUID()
         let todo = TodoModel(id: id, title: title, isCompleted: false)
+        output.dispatch(.resetText)
         output.dispatch(.createOrUpdateTodo(todo))
           /// networking
       case .getTodo:
@@ -96,8 +98,9 @@ let MainEffectMiddleware: SimpleEffectMiddleware<MainAction, MainState> = Simple
     let title = state.title
     let id = UUID()
     let todo = TodoModel(id: id, title: title, isCompleted: false)
+    let resetTextPublisher = SignalProducer(value: MainAction.resetText)
     let publisher = SignalProducer(value: MainAction.createOrUpdateTodo(todo))
-    return publisher
+    return SignalProducer.merge(resetTextPublisher, publisher)
       .asEffect()
       /// networking
   case .getTodo:

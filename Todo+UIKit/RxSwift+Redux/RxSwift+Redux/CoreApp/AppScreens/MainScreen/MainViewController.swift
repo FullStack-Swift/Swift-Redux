@@ -2,6 +2,7 @@ import SwiftRex
 import SwiftUI
 import UIKit
 import ConvertSwift
+import RxSwift
 import RxCocoa
 
 final class MainViewController: BaseViewController {
@@ -150,6 +151,7 @@ extension MainViewController: UITableViewDataSource {
         .rx.text.orEmpty
         .compactMap{$0}
         .map{MainAction.changeText($0)}
+        .observe(on: MainScheduler.asyncInstance)
         .bind(to: viewStore.action)
         .disposed(by: cell.disposeBag)
       return cell
