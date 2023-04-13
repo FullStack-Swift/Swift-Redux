@@ -11,10 +11,8 @@
 		872172A629C2B1FB00650C0E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 872172A529C2B1FB00650C0E /* RealmSwift */; };
 		8741CBB327ACB80F00A40F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8741CBB227ACB80F00A40F7C /* Assets.xcassets */; };
 		8741CBB627ACB80F00A40F7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8741CBB527ACB80F00A40F7C /* Preview Assets.xcassets */; };
+		87B4D87C29E7DE6B00CBDE1F /* Transform in Frameworks */ = {isa = PBXBuildFile; productRef = 87B4D87B29E7DE6B00CBDE1F /* Transform */; };
 		87E2E63327ACB8C500AC3214 /* RxSwiftRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E63227ACB8C500AC3214 /* RxSwiftRex */; };
-		87E2E63627ACB8E300AC3214 /* ConvertSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E63527ACB8E300AC3214 /* ConvertSwift */; };
-		87E2E63927ACB8FB00AC3214 /* RxSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E63827ACB8FB00AC3214 /* RxSwiftRequest */; };
-		87E2E63C27ACB91100AC3214 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E63B27ACB91100AC3214 /* Json */; };
 		87E2E65E27ACB96300AC3214 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E64027ACB96300AC3214 /* MainReducer.swift */; };
 		87E2E65F27ACB96300AC3214 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E64127ACB96300AC3214 /* MainState.swift */; };
 		87E2E66027ACB96300AC3214 /* MainMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E64227ACB96300AC3214 /* MainMiddleware.swift */; };
@@ -95,10 +93,8 @@
 				872172A629C2B1FB00650C0E /* RealmSwift in Frameworks */,
 				872172A429C2B1FB00650C0E /* Realm in Frameworks */,
 				87E2E6EF27ACBB0300AC3214 /* RxRelay in Frameworks */,
-				87E2E63627ACB8E300AC3214 /* ConvertSwift in Frameworks */,
-				87E2E63927ACB8FB00AC3214 /* RxSwiftRequest in Frameworks */,
+				87B4D87C29E7DE6B00CBDE1F /* Transform in Frameworks */,
 				87E2E6ED27ACBB0300AC3214 /* RxCocoa in Frameworks */,
-				87E2E63C27ACB91100AC3214 /* Json in Frameworks */,
 				87E2E63327ACB8C500AC3214 /* RxSwiftRex in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,13 +264,11 @@
 			name = "RxSwift+Redux";
 			packageProductDependencies = (
 				87E2E63227ACB8C500AC3214 /* RxSwiftRex */,
-				87E2E63527ACB8E300AC3214 /* ConvertSwift */,
-				87E2E63827ACB8FB00AC3214 /* RxSwiftRequest */,
-				87E2E63B27ACB91100AC3214 /* Json */,
 				87E2E6EC27ACBB0300AC3214 /* RxCocoa */,
 				87E2E6EE27ACBB0300AC3214 /* RxRelay */,
 				872172A329C2B1FB00650C0E /* Realm */,
 				872172A529C2B1FB00650C0E /* RealmSwift */,
+				87B4D87B29E7DE6B00CBDE1F /* Transform */,
 			);
 			productName = "RxSwift+Redux";
 			productReference = 8741CBAB27ACB80E00A40F7C /* RxSwift+Redux.app */;
@@ -306,11 +300,9 @@
 			mainGroup = 8741CBA227ACB80E00A40F7C;
 			packageReferences = (
 				87E2E63127ACB8C500AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */,
-				87E2E63427ACB8E300AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */,
-				87E2E63727ACB8FB00AC3214 /* XCRemoteSwiftPackageReference "Networking" */,
-				87E2E63A27ACB91100AC3214 /* XCRemoteSwiftPackageReference "Json" */,
 				87E2E6EB27ACBB0300AC3214 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				872172A229C2B1FB00650C0E /* XCRemoteSwiftPackageReference "realm-swift" */,
+				87B4D87A29E7DE6B00CBDE1F /* XCRemoteSwiftPackageReference "swift-extension" */,
 			);
 			productRefGroup = 8741CBAC27ACB80E00A40F7C /* Products */;
 			projectDirPath = "";
@@ -583,36 +575,20 @@
 				version = 10.37.0;
 			};
 		};
+		87B4D87A29E7DE6B00CBDE1F /* XCRemoteSwiftPackageReference "swift-extension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FullStack-Swift/swift-extension";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		87E2E63127ACB8C500AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftRex/SwiftRex.git";
 			requirement = {
 				kind = exactVersion;
 				version = 0.8.11;
-			};
-		};
-		87E2E63427ACB8E300AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/SwiftExtension";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
-			};
-		};
-		87E2E63727ACB8FB00AC3214 /* XCRemoteSwiftPackageReference "Networking" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/Networking";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
-			};
-		};
-		87E2E63A27ACB91100AC3214 /* XCRemoteSwiftPackageReference "Json" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/Json";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
 			};
 		};
 		87E2E6EB27ACBB0300AC3214 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
@@ -636,25 +612,15 @@
 			package = 872172A229C2B1FB00650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
+		87B4D87B29E7DE6B00CBDE1F /* Transform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B4D87A29E7DE6B00CBDE1F /* XCRemoteSwiftPackageReference "swift-extension" */;
+			productName = Transform;
+		};
 		87E2E63227ACB8C500AC3214 /* RxSwiftRex */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E63127ACB8C500AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;
 			productName = RxSwiftRex;
-		};
-		87E2E63527ACB8E300AC3214 /* ConvertSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E63427ACB8E300AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */;
-			productName = ConvertSwift;
-		};
-		87E2E63827ACB8FB00AC3214 /* RxSwiftRequest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E63727ACB8FB00AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
-			productName = RxSwiftRequest;
-		};
-		87E2E63B27ACB91100AC3214 /* Json */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E63A27ACB91100AC3214 /* XCRemoteSwiftPackageReference "Json" */;
-			productName = Json;
 		};
 		87E2E6EC27ACBB0300AC3214 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;

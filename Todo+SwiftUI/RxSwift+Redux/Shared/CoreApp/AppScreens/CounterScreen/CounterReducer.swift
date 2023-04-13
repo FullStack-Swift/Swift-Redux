@@ -1,5 +1,4 @@
 import Foundation
-import SwiftRex
 
 let CounterReducer = Reducer<CounterAction, CounterState>.reduce { action, state in
   switch action {

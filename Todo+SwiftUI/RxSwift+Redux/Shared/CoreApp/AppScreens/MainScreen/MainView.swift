@@ -1,5 +1,4 @@
 import SwiftUI
-import RxSwiftRex
 
 struct MainView: View {
   

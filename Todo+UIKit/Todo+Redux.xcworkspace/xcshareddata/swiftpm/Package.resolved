@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
-        "revision" : "f82c23a8a7ef8dc1a49a8bfc6a96883e79121864",
-        "version" : "5.5.0"
+        "revision" : "78424be314842833c04bc3bef5b72e85fff99204",
+        "version" : "5.6.4"
       }
     },
     {
@@ -16,24 +16,6 @@
       "state" : {
         "revision" : "4e262c2f9fb1cee1cb3be5717f7e6b55eb823971",
         "version" : "0.4.0"
-      }
-    },
-    {
-      "identity" : "json",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/FullStack-Swift/Json",
-      "state" : {
-        "revision" : "b45da4388574b3dfadf7f166aaa962c561e34dd5",
-        "version" : "1.0.0"
-      }
-    },
-    {
-      "identity" : "networking",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/FullStack-Swift/Networking",
-      "state" : {
-        "revision" : "fdbb1c94caf8ead0a26c622e8c08cbd6f6ebb8ac",
-        "version" : "1.0.0"
       }
     },
     {
@@ -50,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveCocoa/ReactiveSwift.git",
       "state" : {
-        "revision" : "efb2f0a6f6c8739cce8fb14148a5bd3c83f2f91d",
-        "version" : "7.0.0"
+        "revision" : "40c465af19b993344e84355c00669ba2022ca3cd",
+        "version" : "7.1.1"
       }
     },
     {
@@ -82,6 +64,15 @@
       }
     },
     {
+      "identity" : "socket.io-client-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/socketio/socket.io-client-swift",
+      "state" : {
+        "revision" : "af5ce97b755d964235348d96f6db5cbdcbe334a5",
+        "version" : "16.0.1"
+      }
+    },
+    {
       "identity" : "starscream",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/daltoniam/Starscream.git",
@@ -91,12 +82,30 @@
       }
     },
     {
-      "identity" : "swiftextension",
+      "identity" : "swift-extension",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/FullStack-Swift/SwiftExtension",
+      "location" : "https://github.com/FullStack-Swift/swift-extension",
       "state" : {
-        "revision" : "cdbd56e6cf32fa0eb97a1fba445736cbe8b8e622",
-        "version" : "1.0.0"
+        "branch" : "main",
+        "revision" : "6f97ddaa7c7e84be9ee86f1be8e8c1271118413c"
+      }
+    },
+    {
+      "identity" : "swift-json",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FullStack-Swift/swift-json",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ac54806fd7e10587755ac5cfd802ae15ef6907d4"
+      }
+    },
+    {
+      "identity" : "swift-networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/FullStack-Swift/swift-networking",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e0b1c68e6e550edcb6a3e294e9b6a1c80abf7c51"
       }
     },
     {

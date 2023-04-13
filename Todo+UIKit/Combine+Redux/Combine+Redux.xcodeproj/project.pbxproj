@@ -11,6 +11,11 @@
 		8721729C29C2B16E00650C0E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8721729B29C2B16E00650C0E /* RealmSwift */; };
 		87437EE427ACB7DE00244FC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87437EE327ACB7DE00244FC8 /* Assets.xcassets */; };
 		87437EE727ACB7DE00244FC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87437EE627ACB7DE00244FC8 /* Preview Assets.xcassets */; };
+		87B4D86F29E7DCBD00CBDE1F /* CombineSocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 87B4D86E29E7DCBD00CBDE1F /* CombineSocketIO */; };
+		87B4D87129E7DCBD00CBDE1F /* ReactiveSwiftSocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 87B4D87029E7DCBD00CBDE1F /* ReactiveSwiftSocketIO */; };
+		87B4D87329E7DCBD00CBDE1F /* RxSwiftSocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 87B4D87229E7DCBD00CBDE1F /* RxSwiftSocketIO */; };
+		87B4D87629E7DD2B00CBDE1F /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 87B4D87529E7DD2B00CBDE1F /* Json */; };
+		87B4D87929E7DD8100CBDE1F /* Transform in Frameworks */ = {isa = PBXBuildFile; productRef = 87B4D87829E7DD8100CBDE1F /* Transform */; };
 		87E2E69827ACB9A800AC3214 /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E67A27ACB9A800AC3214 /* MainReducer.swift */; };
 		87E2E69927ACB9A800AC3214 /* MainState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E67B27ACB9A800AC3214 /* MainState.swift */; };
 		87E2E69A27ACB9A800AC3214 /* MainMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E67C27ACB9A800AC3214 /* MainMiddleware.swift */; };
@@ -39,9 +44,6 @@
 		87E2E73E27ACDDCD00AC3214 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E73827ACDDCD00AC3214 /* View+.swift */; };
 		87E2E74027ACDE5200AC3214 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E73F27ACDE5200AC3214 /* RootViewController.swift */; };
 		87E2E74327ACDED100AC3214 /* CombineRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E74227ACDED100AC3214 /* CombineRex */; };
-		87E2E74627ACDEF600AC3214 /* CombineRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E74527ACDEF600AC3214 /* CombineRequest */; };
-		87E2E74927ACDF0400AC3214 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E74827ACDF0400AC3214 /* Json */; };
-		87E2E74C27ACDF1700AC3214 /* ConvertSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E74B27ACDF1700AC3214 /* ConvertSwift */; };
 		87E2E74E27ACE04D00AC3214 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E74D27ACE04D00AC3214 /* AuthViewController.swift */; };
 		87E2E75127ACE0A300AC3214 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E75027ACE0A300AC3214 /* CombineCocoa */; };
 		87E2E75327ACE17000AC3214 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E75227ACE17000AC3214 /* MainViewController.swift */; };
@@ -90,12 +92,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8721729A29C2B16E00650C0E /* Realm in Frameworks */,
-				87E2E74627ACDEF600AC3214 /* CombineRequest in Frameworks */,
 				8721729C29C2B16E00650C0E /* RealmSwift in Frameworks */,
 				87E2E74327ACDED100AC3214 /* CombineRex in Frameworks */,
-				87E2E74C27ACDF1700AC3214 /* ConvertSwift in Frameworks */,
+				87B4D86F29E7DCBD00CBDE1F /* CombineSocketIO in Frameworks */,
+				87B4D87329E7DCBD00CBDE1F /* RxSwiftSocketIO in Frameworks */,
+				87B4D87129E7DCBD00CBDE1F /* ReactiveSwiftSocketIO in Frameworks */,
+				87B4D87929E7DD8100CBDE1F /* Transform in Frameworks */,
+				87B4D87629E7DD2B00CBDE1F /* Json in Frameworks */,
 				87E2E75127ACE0A300AC3214 /* CombineCocoa in Frameworks */,
-				87E2E74927ACDF0400AC3214 /* Json in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,12 +267,14 @@
 			name = "Combine+Redux";
 			packageProductDependencies = (
 				87E2E74227ACDED100AC3214 /* CombineRex */,
-				87E2E74527ACDEF600AC3214 /* CombineRequest */,
-				87E2E74827ACDF0400AC3214 /* Json */,
-				87E2E74B27ACDF1700AC3214 /* ConvertSwift */,
 				87E2E75027ACE0A300AC3214 /* CombineCocoa */,
 				8721729929C2B16E00650C0E /* Realm */,
 				8721729B29C2B16E00650C0E /* RealmSwift */,
+				87B4D86E29E7DCBD00CBDE1F /* CombineSocketIO */,
+				87B4D87029E7DCBD00CBDE1F /* ReactiveSwiftSocketIO */,
+				87B4D87229E7DCBD00CBDE1F /* RxSwiftSocketIO */,
+				87B4D87529E7DD2B00CBDE1F /* Json */,
+				87B4D87829E7DD8100CBDE1F /* Transform */,
 			);
 			productName = "Combine+Redux";
 			productReference = 87437EDC27ACB7DD00244FC8 /* Combine+Redux.app */;
@@ -300,11 +306,11 @@
 			mainGroup = 87437ED327ACB7DD00244FC8;
 			packageReferences = (
 				87E2E74127ACDED100AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */,
-				87E2E74427ACDEF600AC3214 /* XCRemoteSwiftPackageReference "Networking" */,
-				87E2E74727ACDF0400AC3214 /* XCRemoteSwiftPackageReference "Json" */,
-				87E2E74A27ACDF1700AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */,
 				87E2E74F27ACE0A300AC3214 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 				8721729829C2B16E00650C0E /* XCRemoteSwiftPackageReference "realm-swift" */,
+				87B4D86D29E7DCBD00CBDE1F /* XCRemoteSwiftPackageReference "swift-networking" */,
+				87B4D87429E7DD2B00CBDE1F /* XCRemoteSwiftPackageReference "swift-json" */,
+				87B4D87729E7DD8100CBDE1F /* XCRemoteSwiftPackageReference "swift-extension" */,
 			);
 			productRefGroup = 87437EDD27ACB7DD00244FC8 /* Products */;
 			projectDirPath = "";
@@ -576,36 +582,36 @@
 				version = 10.37.0;
 			};
 		};
+		87B4D86D29E7DCBD00CBDE1F /* XCRemoteSwiftPackageReference "swift-networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FullStack-Swift/swift-networking";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		87B4D87429E7DD2B00CBDE1F /* XCRemoteSwiftPackageReference "swift-json" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FullStack-Swift/swift-json";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		87B4D87729E7DD8100CBDE1F /* XCRemoteSwiftPackageReference "swift-extension" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FullStack-Swift/swift-extension";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		87E2E74127ACDED100AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftRex/SwiftRex.git";
 			requirement = {
 				kind = exactVersion;
 				version = 0.8.11;
-			};
-		};
-		87E2E74427ACDEF600AC3214 /* XCRemoteSwiftPackageReference "Networking" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/Networking";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
-			};
-		};
-		87E2E74727ACDF0400AC3214 /* XCRemoteSwiftPackageReference "Json" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/Json";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
-			};
-		};
-		87E2E74A27ACDF1700AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/SwiftExtension";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
 			};
 		};
 		87E2E74F27ACE0A300AC3214 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
@@ -629,25 +635,35 @@
 			package = 8721729829C2B16E00650C0E /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
+		87B4D86E29E7DCBD00CBDE1F /* CombineSocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B4D86D29E7DCBD00CBDE1F /* XCRemoteSwiftPackageReference "swift-networking" */;
+			productName = CombineSocketIO;
+		};
+		87B4D87029E7DCBD00CBDE1F /* ReactiveSwiftSocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B4D86D29E7DCBD00CBDE1F /* XCRemoteSwiftPackageReference "swift-networking" */;
+			productName = ReactiveSwiftSocketIO;
+		};
+		87B4D87229E7DCBD00CBDE1F /* RxSwiftSocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B4D86D29E7DCBD00CBDE1F /* XCRemoteSwiftPackageReference "swift-networking" */;
+			productName = RxSwiftSocketIO;
+		};
+		87B4D87529E7DD2B00CBDE1F /* Json */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B4D87429E7DD2B00CBDE1F /* XCRemoteSwiftPackageReference "swift-json" */;
+			productName = Json;
+		};
+		87B4D87829E7DD8100CBDE1F /* Transform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87B4D87729E7DD8100CBDE1F /* XCRemoteSwiftPackageReference "swift-extension" */;
+			productName = Transform;
+		};
 		87E2E74227ACDED100AC3214 /* CombineRex */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E74127ACDED100AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;
 			productName = CombineRex;
-		};
-		87E2E74527ACDEF600AC3214 /* CombineRequest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E74427ACDEF600AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
-			productName = CombineRequest;
-		};
-		87E2E74827ACDF0400AC3214 /* Json */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E74727ACDF0400AC3214 /* XCRemoteSwiftPackageReference "Json" */;
-			productName = Json;
-		};
-		87E2E74B27ACDF1700AC3214 /* ConvertSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E74A27ACDF1700AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */;
-			productName = ConvertSwift;
 		};
 		87E2E75027ACE0A300AC3214 /* CombineCocoa */ = {
 			isa = XCSwiftPackageProductDependency;

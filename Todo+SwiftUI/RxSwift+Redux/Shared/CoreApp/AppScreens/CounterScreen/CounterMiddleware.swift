@@ -1,5 +1,4 @@
 import SwiftRex
-import Combine
 
 class CounterMiddleware: MiddlewareProtocol {
   

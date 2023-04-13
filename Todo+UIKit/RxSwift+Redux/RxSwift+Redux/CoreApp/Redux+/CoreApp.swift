@@ -1,4 +1,4 @@
-import SwiftRex
+@_exported import SwiftRex
 
 // MARK: Functional helpers
 func ignore<T>(_ t: T) -> Void { }

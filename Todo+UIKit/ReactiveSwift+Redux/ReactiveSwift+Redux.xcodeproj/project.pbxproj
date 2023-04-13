@@ -32,9 +32,6 @@
 		87E2E6E827ACB9B000AC3214 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6CE27ACB9B000AC3214 /* TodoModel.swift */; };
 		87E2E6EA27ACB9B000AC3214 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E6D127ACB9B000AC3214 /* ViewStore.swift */; };
 		87E2E75827ACE52200AC3214 /* ReactiveSwiftRex in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E75727ACE52200AC3214 /* ReactiveSwiftRex */; };
-		87E2E75B27ACE53A00AC3214 /* ReactiveSwiftRequest in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E75A27ACE53A00AC3214 /* ReactiveSwiftRequest */; };
-		87E2E75E27ACE54900AC3214 /* Json in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E75D27ACE54900AC3214 /* Json */; };
-		87E2E76127ACE56100AC3214 /* ConvertSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E76027ACE56100AC3214 /* ConvertSwift */; };
 		87E2E76427ACE5C400AC3214 /* ReactiveCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 87E2E76327ACE5C400AC3214 /* ReactiveCocoa */; };
 		87E2E76627ACE7E300AC3214 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E76527ACE7E300AC3214 /* MainViewController.swift */; };
 		87E2E76827ACE7F400AC3214 /* RootViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E2E76727ACE7F400AC3214 /* RootViewControler.swift */; };
@@ -93,9 +90,6 @@
 				87E2E75827ACE52200AC3214 /* ReactiveSwiftRex in Frameworks */,
 				872172A129C2B1D700650C0E /* RealmSwift in Frameworks */,
 				87E2E76427ACE5C400AC3214 /* ReactiveCocoa in Frameworks */,
-				87E2E75B27ACE53A00AC3214 /* ReactiveSwiftRequest in Frameworks */,
-				87E2E76127ACE56100AC3214 /* ConvertSwift in Frameworks */,
-				87E2E75E27ACE54900AC3214 /* Json in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +257,6 @@
 			name = "ReactiveSwift+Redux";
 			packageProductDependencies = (
 				87E2E75727ACE52200AC3214 /* ReactiveSwiftRex */,
-				87E2E75A27ACE53A00AC3214 /* ReactiveSwiftRequest */,
-				87E2E75D27ACE54900AC3214 /* Json */,
-				87E2E76027ACE56100AC3214 /* ConvertSwift */,
 				87E2E76327ACE5C400AC3214 /* ReactiveCocoa */,
 				8721729E29C2B1D700650C0E /* Realm */,
 				872172A029C2B1D700650C0E /* RealmSwift */,
@@ -300,9 +291,6 @@
 			mainGroup = 87437EED27ACB7F900244FC8;
 			packageReferences = (
 				87E2E75627ACE52200AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */,
-				87E2E75927ACE53A00AC3214 /* XCRemoteSwiftPackageReference "Networking" */,
-				87E2E75C27ACE54900AC3214 /* XCRemoteSwiftPackageReference "Json" */,
-				87E2E75F27ACE56100AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */,
 				87E2E76227ACE5C400AC3214 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */,
 				8721729D29C2B1D700650C0E /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
@@ -584,30 +572,6 @@
 				version = 0.8.11;
 			};
 		};
-		87E2E75927ACE53A00AC3214 /* XCRemoteSwiftPackageReference "Networking" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/Networking";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
-			};
-		};
-		87E2E75C27ACE54900AC3214 /* XCRemoteSwiftPackageReference "Json" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/Json";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
-			};
-		};
-		87E2E75F27ACE56100AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/FullStack-Swift/SwiftExtension";
-			requirement = {
-				kind = exactVersion;
-				version = 1.0.0;
-			};
-		};
 		87E2E76227ACE5C400AC3214 /* XCRemoteSwiftPackageReference "ReactiveCocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveCocoa/ReactiveCocoa";
@@ -633,21 +597,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 87E2E75627ACE52200AC3214 /* XCRemoteSwiftPackageReference "SwiftRex" */;
 			productName = ReactiveSwiftRex;
-		};
-		87E2E75A27ACE53A00AC3214 /* ReactiveSwiftRequest */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E75927ACE53A00AC3214 /* XCRemoteSwiftPackageReference "Networking" */;
-			productName = ReactiveSwiftRequest;
-		};
-		87E2E75D27ACE54900AC3214 /* Json */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E75C27ACE54900AC3214 /* XCRemoteSwiftPackageReference "Json" */;
-			productName = Json;
-		};
-		87E2E76027ACE56100AC3214 /* ConvertSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 87E2E75F27ACE56100AC3214 /* XCRemoteSwiftPackageReference "SwiftExtension" */;
-			productName = ConvertSwift;
 		};
 		87E2E76327ACE5C400AC3214 /* ReactiveCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
