@@ -72,6 +72,22 @@
 		876609D729C2D6B60057667D /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 876609D629C2D6B60057667D /* Dependencies */; };
 		876609DA29C2D6ED0057667D /* DependencyValues+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876609D929C2D6ED0057667D /* DependencyValues+.swift */; };
 		876609DB29C2D6F10057667D /* DependencyValues+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876609D929C2D6ED0057667D /* DependencyValues+.swift */; };
+		87BDA1E829ECFCD700755271 /* NavigationStackBackport in Frameworks */ = {isa = PBXBuildFile; productRef = 87BDA1E729ECFCD700755271 /* NavigationStackBackport */; };
+		87BDA1EB29ED3B4E00755271 /* NavigationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1EA29ED3B4E00755271 /* NavigationContainer.swift */; };
+		87BDA1EC29ED3B4E00755271 /* NavigationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1EA29ED3B4E00755271 /* NavigationContainer.swift */; };
+		87BDA1EF29ED477D00755271 /* IdentifiedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 87BDA1EE29ED477D00755271 /* IdentifiedCollections */; };
+		87BDA1F229EE405A00755271 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1F129EE405A00755271 /* ExampleView.swift */; };
+		87BDA1F329EE405A00755271 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1F129EE405A00755271 /* ExampleView.swift */; };
+		87BDA1F529EE407400755271 /* ExampleReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1F429EE407400755271 /* ExampleReducer.swift */; };
+		87BDA1F629EE407400755271 /* ExampleReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1F429EE407400755271 /* ExampleReducer.swift */; };
+		87BDA1F829EE407E00755271 /* ExampleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1F729EE407E00755271 /* ExampleState.swift */; };
+		87BDA1F929EE407E00755271 /* ExampleState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1F729EE407E00755271 /* ExampleState.swift */; };
+		87BDA1FB29EE408500755271 /* ExampleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1FA29EE408500755271 /* ExampleAction.swift */; };
+		87BDA1FC29EE408500755271 /* ExampleAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1FA29EE408500755271 /* ExampleAction.swift */; };
+		87BDA1FE29EE409000755271 /* ExampleMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1FD29EE409000755271 /* ExampleMiddleware.swift */; };
+		87BDA1FF29EE409000755271 /* ExampleMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA1FD29EE409000755271 /* ExampleMiddleware.swift */; };
+		87BDA20229EE6EA500755271 /* MultiChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA20129EE6EA500755271 /* MultiChildrenView.swift */; };
+		87BDA20329EE6EA500755271 /* MultiChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDA20129EE6EA500755271 /* MultiChildrenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +120,13 @@
 		874912E227ACB50200168364 /* RootMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootMiddleware.swift; sourceTree = "<group>"; };
 		874912E327ACB50200168364 /* TodoApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoApp.swift; sourceTree = "<group>"; };
 		876609D929C2D6ED0057667D /* DependencyValues+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyValues+.swift"; sourceTree = "<group>"; };
+		87BDA1EA29ED3B4E00755271 /* NavigationContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationContainer.swift; sourceTree = "<group>"; };
+		87BDA1F129EE405A00755271 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		87BDA1F429EE407400755271 /* ExampleReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleReducer.swift; sourceTree = "<group>"; };
+		87BDA1F729EE407E00755271 /* ExampleState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleState.swift; sourceTree = "<group>"; };
+		87BDA1FA29EE408500755271 /* ExampleAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAction.swift; sourceTree = "<group>"; };
+		87BDA1FD29EE409000755271 /* ExampleMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMiddleware.swift; sourceTree = "<group>"; };
+		87BDA20129EE6EA500755271 /* MultiChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiChildrenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +137,12 @@
 				872172B029C2B26800650C0E /* RealmSwift in Frameworks */,
 				876609D729C2D6B60057667D /* Dependencies in Frameworks */,
 				871FE81C29E6BE4D002635BB /* CombineRequest in Frameworks */,
+				87BDA1EF29ED477D00755271 /* IdentifiedCollections in Frameworks */,
 				871FE82029E6BE4D002635BB /* CombineWebSocket in Frameworks */,
 				8749131B27ACB54200168364 /* CombineRex in Frameworks */,
 				872172AE29C2B26800650C0E /* Realm in Frameworks */,
 				871FE82429E6BE4D002635BB /* Transform in Frameworks */,
+				87BDA1E829ECFCD700755271 /* NavigationStackBackport in Frameworks */,
 				871FE82229E6BE4D002635BB /* Json in Frameworks */,
 				871FE81E29E6BE4D002635BB /* CombineSocketIO in Frameworks */,
 			);
@@ -176,6 +201,7 @@
 		874912C727ACB50200168364 /* CoreApp */ = {
 			isa = PBXGroup;
 			children = (
+				87BDA20029EE6E8D00755271 /* CoreView */,
 				876609D829C2D6D50057667D /* Dependencies */,
 				874912CF27ACB50200168364 /* Models */,
 				874912E427ACB50200168364 /* Redux+ */,
@@ -253,6 +279,8 @@
 		874913CB27ACB6B500168364 /* AppScreens */ = {
 			isa = PBXGroup;
 			children = (
+				87BDA1F029EE404500755271 /* ExampleScreen */,
+				87BDA1E929ED3B3600755271 /* PresentScreen */,
 				874912C827ACB50200168364 /* MainScreen */,
 				874912D127ACB50200168364 /* CounterScreen */,
 				874912D727ACB50200168364 /* AuthScreen */,
@@ -274,6 +302,34 @@
 				876609D929C2D6ED0057667D /* DependencyValues+.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		87BDA1E929ED3B3600755271 /* PresentScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87BDA1EA29ED3B4E00755271 /* NavigationContainer.swift */,
+			);
+			path = PresentScreen;
+			sourceTree = "<group>";
+		};
+		87BDA1F029EE404500755271 /* ExampleScreen */ = {
+			isa = PBXGroup;
+			children = (
+				87BDA1F129EE405A00755271 /* ExampleView.swift */,
+				87BDA1F729EE407E00755271 /* ExampleState.swift */,
+				87BDA1FA29EE408500755271 /* ExampleAction.swift */,
+				87BDA1F429EE407400755271 /* ExampleReducer.swift */,
+				87BDA1FD29EE409000755271 /* ExampleMiddleware.swift */,
+			);
+			path = ExampleScreen;
+			sourceTree = "<group>";
+		};
+		87BDA20029EE6E8D00755271 /* CoreView */ = {
+			isa = PBXGroup;
+			children = (
+				87BDA20129EE6EA500755271 /* MultiChildrenView.swift */,
+			);
+			path = CoreView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +358,8 @@
 				871FE81F29E6BE4D002635BB /* CombineWebSocket */,
 				871FE82129E6BE4D002635BB /* Json */,
 				871FE82329E6BE4D002635BB /* Transform */,
+				87BDA1E729ECFCD700755271 /* NavigationStackBackport */,
+				87BDA1EE29ED477D00755271 /* IdentifiedCollections */,
 			);
 			productName = "Combine+Redux (iOS)";
 			productReference = 8749126827ACB46A00168364 /* Combine+Redux.app */;
@@ -364,6 +422,8 @@
 				8749132427ACB59800168364 /* XCRemoteSwiftPackageReference "SwiftExtension" */,
 				872172AC29C2B26800650C0E /* XCRemoteSwiftPackageReference "realm-swift" */,
 				876609D529C2D6B60057667D /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				87BDA1E629ECFCD700755271 /* XCRemoteSwiftPackageReference "navigation-stack-backport" */,
+				87BDA1ED29ED477D00755271 /* XCRemoteSwiftPackageReference "swift-identified-collections" */,
 			);
 			productRefGroup = 8749126927ACB46A00168364 /* Products */;
 			projectDirPath = "";
@@ -399,6 +459,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BDA1F829EE407E00755271 /* ExampleState.swift in Sources */,
+				87BDA20229EE6EA500755271 /* MultiChildrenView.swift in Sources */,
+				87BDA1EB29ED3B4E00755271 /* NavigationContainer.swift in Sources */,
+				87BDA1F529EE407400755271 /* ExampleReducer.swift in Sources */,
 				874912FB27ACB50200168364 /* CounterAction.swift in Sources */,
 				8749130F27ACB50200168364 /* RootReducer.swift in Sources */,
 				8721729629C2ABF600650C0E /* ViewStore.swift in Sources */,
@@ -407,16 +471,19 @@
 				874912F727ACB50200168364 /* CounterState.swift in Sources */,
 				874912FF27ACB50200168364 /* AuthMiddleware.swift in Sources */,
 				8749130D27ACB50200168364 /* RootState.swift in Sources */,
+				87BDA1FE29EE409000755271 /* ExampleMiddleware.swift in Sources */,
 				874912EB27ACB50200168364 /* MainMiddleware.swift in Sources */,
 				876609DA29C2D6ED0057667D /* DependencyValues+.swift in Sources */,
 				874912ED27ACB50200168364 /* MainView.swift in Sources */,
 				874912F127ACB50200168364 /* CoreApp.swift in Sources */,
 				874912EF27ACB50200168364 /* MainAction.swift in Sources */,
+				87BDA1F229EE405A00755271 /* ExampleView.swift in Sources */,
 				8749131327ACB50200168364 /* TodoApp.swift in Sources */,
 				874912FD27ACB50200168364 /* CounterMiddleware.swift in Sources */,
 				874912E927ACB50200168364 /* MainState.swift in Sources */,
 				8749130B27ACB50200168364 /* RootView.swift in Sources */,
 				8749130527ACB50200168364 /* AuthReducer.swift in Sources */,
+				87BDA1FB29EE408500755271 /* ExampleAction.swift in Sources */,
 				8749130927ACB50200168364 /* RootAction.swift in Sources */,
 				8749131127ACB50200168364 /* RootMiddleware.swift in Sources */,
 				874912E727ACB50200168364 /* MainReducer.swift in Sources */,
@@ -431,6 +498,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BDA1F929EE407E00755271 /* ExampleState.swift in Sources */,
+				87BDA20329EE6EA500755271 /* MultiChildrenView.swift in Sources */,
+				87BDA1EC29ED3B4E00755271 /* NavigationContainer.swift in Sources */,
+				87BDA1F629EE407400755271 /* ExampleReducer.swift in Sources */,
 				874912FC27ACB50200168364 /* CounterAction.swift in Sources */,
 				8749131027ACB50200168364 /* RootReducer.swift in Sources */,
 				8721729729C2ABF600650C0E /* ViewStore.swift in Sources */,
@@ -439,16 +510,19 @@
 				874912F827ACB50200168364 /* CounterState.swift in Sources */,
 				8749130027ACB50200168364 /* AuthMiddleware.swift in Sources */,
 				8749130E27ACB50200168364 /* RootState.swift in Sources */,
+				87BDA1FF29EE409000755271 /* ExampleMiddleware.swift in Sources */,
 				874912EC27ACB50200168364 /* MainMiddleware.swift in Sources */,
 				876609DB29C2D6F10057667D /* DependencyValues+.swift in Sources */,
 				874912EE27ACB50200168364 /* MainView.swift in Sources */,
 				874912F227ACB50200168364 /* CoreApp.swift in Sources */,
 				874912F027ACB50200168364 /* MainAction.swift in Sources */,
+				87BDA1F329EE405A00755271 /* ExampleView.swift in Sources */,
 				8749131427ACB50200168364 /* TodoApp.swift in Sources */,
 				874912FE27ACB50200168364 /* CounterMiddleware.swift in Sources */,
 				874912EA27ACB50200168364 /* MainState.swift in Sources */,
 				8749130C27ACB50200168364 /* RootView.swift in Sources */,
 				8749130627ACB50200168364 /* AuthReducer.swift in Sources */,
+				87BDA1FC29EE408500755271 /* ExampleAction.swift in Sources */,
 				8749130A27ACB50200168364 /* RootAction.swift in Sources */,
 				8749131227ACB50200168364 /* RootMiddleware.swift in Sources */,
 				874912E827ACB50200168364 /* MainReducer.swift in Sources */,
@@ -781,6 +855,22 @@
 				version = 0.2.0;
 			};
 		};
+		87BDA1E629ECFCD700755271 /* XCRemoteSwiftPackageReference "navigation-stack-backport" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lm/navigation-stack-backport.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		87BDA1ED29ED477D00755271 /* XCRemoteSwiftPackageReference "swift-identified-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-identified-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -848,6 +938,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 876609D529C2D6B60057667D /* XCRemoteSwiftPackageReference "swift-dependencies" */;
 			productName = Dependencies;
+		};
+		87BDA1E729ECFCD700755271 /* NavigationStackBackport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87BDA1E629ECFCD700755271 /* XCRemoteSwiftPackageReference "navigation-stack-backport" */;
+			productName = NavigationStackBackport;
+		};
+		87BDA1EE29ED477D00755271 /* IdentifiedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 87BDA1ED29ED477D00755271 /* XCRemoteSwiftPackageReference "swift-identified-collections" */;
+			productName = IdentifiedCollections;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

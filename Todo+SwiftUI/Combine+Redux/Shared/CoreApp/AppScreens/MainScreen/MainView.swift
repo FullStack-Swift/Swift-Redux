@@ -6,7 +6,11 @@ struct MainView: View {
   
   @ObservedObject
   private var viewStore: ViewStore<MainAction, MainState>
-  
+
+  @EnvironmentObject var navigationViewStore: ViewStore<NavigationAction, NavigationState>
+  @EnvironmentObject var counterViewStore: ViewStore<CounterAction, CounterState>
+  @Dependency(\.counterStore) var counterStore
+
   init(store: AnyStoreType<MainAction, MainState>? = nil) {
     let unwrapStore = store ?? ReduxStoreBase(
       subject: .combine(initialValue: MainState()),
@@ -39,12 +43,39 @@ struct MainView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
 #endif
 #if os(iOS)
-      NavigationView {
-        content
-          .navigationTitle("Todos")
+      NavigationContainer {
+        ZStack {
+          Color.white
+          TabView {
+            content
+              .navigationBarItems(leading: Text("ABC"), trailing: Text("123"))
+              .tabItem {
+                VStack {
+                  Image(systemName: "bolt.circle")
+                  Text("Todos")
+                }
+              }
+            content
+              .navigationBarItems(leading: Text("ABC"), trailing: Text("123"))
+              .tabItem {
+                VStack {
+                  Image(systemName: "bolt.circle")
+                  Text("Todos")
+                }
+              }
+            content
+              .navigationBarItems(leading: Text("ABC"), trailing: Text("123"))
+              .tabItem {
+                VStack {
+                  Image(systemName: "bolt.circle")
+                  Text("Todos")
+                }
+              }
+          }
+          .navigationBarTitle(Text("Todos"), displayMode: .inline)
           .navigationBarItems(leading: leadingBarItems, trailing: trailingBarItems)
+        }
       }
-      .navigationViewStyle(.stack)
 #endif
     }
     .onAppear {
@@ -115,10 +146,23 @@ extension MainView {
       .padding(.all, 0)
     }
     .padding(.all, 0)
+    .listStyle(.plain)
+    .background(Color.white)
   }
   
   private var leadingBarItems: some View {
-    CounterView(store: store.projection(action: MainAction.counterAction, state: {$0.counterState}))
+    HStack {
+      Button {
+        navigationViewStore.send(.pushScreen([.counter]))
+      } label: {
+        Text("+-")
+      }
+      Button {
+        navigationViewStore.send(.pushScreen([.examples]))
+      } label: {
+        Text("Examples")
+      }
+    }
   }
   
   private var trailingBarItems: some View {

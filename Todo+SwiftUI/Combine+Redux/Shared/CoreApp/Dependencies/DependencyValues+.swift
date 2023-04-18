@@ -131,7 +131,7 @@ extension DependencyValues {
 extension DependencyValues {
   var rootStore: StoreProjection<RootAction, RootState> {
     ReduxStoreBase(
-      subject: .combine(initialValue: RootState()),
+      subject: .combine(initialValue: rootState),
       reducer: appReducer,
       middleware: appMiddleware
     )
@@ -162,3 +162,14 @@ extension DependencyValues {
       )
   }
 }
+
+extension DependencyValues {
+  var rootState: RootState {
+    self[RootStateKey.self]
+  }
+}
+fileprivate struct RootStateKey: DependencyKey {
+  static let liveValue = RootState()
+}
+
+public typealias Store = ReduxStoreBase
