@@ -3,15 +3,21 @@ import SwiftRex
 import NavigationStackBackport
 import IdentifiedCollections
 
+public typealias _NavigationStack = NavigationStackBackport.NavigationStack
+
 struct NavigationContainer<Root: View>: View {
 
   @EnvironmentObject var viewStore: ViewStore<NavigationAction, NavigationState>
 
-  let root: () -> Root
+  let rootView: () -> Root
+
+  public init(@ViewBuilder rootView: @escaping () -> Root) {
+    self.rootView = rootView
+  }
 
   var body: some View {
-    NavigationStackBackport.NavigationStack(path: viewStore.binding(get: { Array($0.stack) }, send: NavigationAction.set)) {
-      root()
+    _NavigationStack(path: viewStore.binding(get: { Array($0.stack) }, send: NavigationAction.set)) {
+      rootView()
         .backport.navigationDestination(for: Destination.State.self) { value in
           NavigationDetailView(screen: value.screen)
         }
